@@ -9,7 +9,7 @@
 	
 	{{#if tags}}
 	<ul id="post-tags">
-		{{#foreach tags}}<li>{{name}}</li>{{/foreach}}
+		{{#foreach tags}}<li><a href="{{url}}" title="{{name}}">{{name}}</a></li>{{/foreach}}
 	</ul>
 	{{/if}}
 
