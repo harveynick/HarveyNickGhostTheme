@@ -1,6 +1,8 @@
 # Toast
 
-A fully compliment HTML5 boilerplate for Ghost blog theme authors.
+A fully compliment HTML5 boilerplate for Ghost blog theme authors. This was developed as a starting point for theme developers in creating their awesome new templates for the system and contains only the handlebar files and the most basic formatting to get you started.
+
+**There is no screenshots or fancy build systems as it looks like a blog with next to no styling which not many people would want to see, as it's a horrible sight i assure you.**
 
 ### License
 
