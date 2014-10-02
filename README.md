@@ -1,4 +1,5 @@
 # Toast
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/nblackburn/toast?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 A fully compliment HTML5 boilerplate for Ghost blog theme authors. This was developed as a starting point for theme developers in creating their awesome new templates for the system and contains only the handlebar files and the most basic formatting to get you started.
 
