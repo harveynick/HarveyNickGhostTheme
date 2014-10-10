@@ -5,6 +5,8 @@
 
     <h3 class="post-title"><a href="{{url}}" title="{{title}}">{{title}}</a></h3>
     <time class="post-stamp" datetime="{{date format="YYYY-MM-DDTHH:MM:SS"}}">{{date published_at format='Do MMMM YYYY'}}</time>
+    {{#author}}<span class="post-author"><a href="{{url}}">{{name}}</a></span>{{/author}}
+    
     <p class="post-description">{{excerpt characters='100'}}</p>
     
     {{#if tags}}
