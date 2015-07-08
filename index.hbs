@@ -1,20 +1,15 @@
 {{!< default}}
 
 {{#foreach posts}}
-<article id="{{id}}" class="{{post_class}}">
-
-    <h3 class="post-title"><a href="{{url}}" title="{{title}}">{{title}}</a></h3>
-    <time class="post-stamp" datetime="{{date format="YYYY-MM-DDTHH:MM:SS"}}">{{date published_at format='Do MMMM YYYY'}}</time>
-    {{#author}}<span class="post-author"><a href="{{url}}">{{name}}</a></span>{{/author}}
-    
-    <p class="post-description">{{excerpt characters='100'}}</p>
-    
-    {{#if tags}}
-    <ul id="post-tags">
-        {{#foreach tags}}<li><a href="{{url}}" title="{{name}}">{{name}}</a></li>{{/foreach}}
-    </ul>
-    {{/if}}
-
+<article class="preview">
+    {{> article-header}}
+    {{> article-meta}}
+    <section class="post-excerpt">
+        <p>
+        	{{excerpt words="100"}}&hellip;
+        	-&nbsp;<a href="{{url}}">Read this article <i class="fa fa-chevron-circle-right"></i></a>
+        </p>
+    </section>
 </article>
 {{/foreach}}
 

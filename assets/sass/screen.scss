@@ -1,0 +1,422 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+$main-colour: #009688;
+$light-colour: #4DB6AC;
+$dark-colour: #00796B;
+$accent-colour: #FF6E40;
+$text-colour: rgba(0, 0, 0, 0.8);
+$light-text-colour: rgba(255, 255, 255, 0.8);
+
+$header-padding: 0.25em;
+$paragraph-padding: 0.8em;
+$side-padding: 8px;
+
+$golden-ratio: 1.5;
+$trunk-width: 640px;
+$bounding-width: $trunk-width * $golden-ratio;
+
+$bullet-point: "* ";
+
+@mixin central($width) {
+	margin-left: auto;
+	margin-right: auto;
+	width: $width;
+	max-width: 100%;
+}
+
+@mixin tight($border) {
+	margin-left: $border;
+	margin-right: $border;
+	width: auto;
+	max-width: 100%;
+}
+
+@mixin colours($normal, $hover) {
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	transition:.5s;
+	:link { color: $normal; }
+	:visited { color: $normal; }
+	:hover { color: $hover; }
+	:active { color: $hover; }
+}
+
+@mixin link-colours($normal, $hover) {
+	a {
+		-o-transition:.5s;
+		-ms-transition:.5s;
+		-moz-transition:.5s;
+		-webkit-transition:.5s;
+		transition:.5s;
+	}
+	a:link { color: $normal; }
+	a:visited { color: $normal; }
+	a:hover { color: $hover; }
+	a:active { color: $hover; }
+}
+
+@mixin h-list() {
+	a { text-decoration: none; }
+	li {
+		display: inline;
+		list-style-type: none;
+		padding-left: 0em;
+		text-indent: 0em;
+	}
+	li::before {
+		content: ""; 
+	}
+	li + li::before {
+		color: $accent-colour;
+		content: $bullet-point; 
+	}
+}
+
+@mixin title-font($size, $normal, $hover) {
+	font-family: "Source Code Pro";
+	font-weight: 300;
+	font-size: $size;
+//	a { text-decoration: none; }
+	color: $normal;
+	@include link-colours($normal, $hover);
+}
+
+@mixin button() {
+	@include title-font(24px, $text-colour, $accent-colour);
+	a { text-decoration: none; }
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	padding: 2px 4px 2px 4px;
+	border-radius: 4px;
+}
+
+body {
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+.bounding {
+	@include central($bounding-width);
+}
+
+header#site-head {
+	text-align: left;
+
+	padding-bottom: 16px;
+
+	h1 {
+		font-family: "Source Code Pro";
+		font-weight: 200;
+		font-size: 58px;
+		@include link-colours($light-colour, $accent-colour);
+		a {
+			text-decoration: none;
+			em {
+				color: $main-colour;
+			}
+		}
+
+
+		margin-bottom: 6px;
+
+	}
+	p {
+		display: none;
+	}
+	nav {
+		@include title-font(18px, $text-colour, $accent-colour);
+		text-transform: uppercase;
+		@include h-list();
+	}
+}
+
+
+article {
+	@include central($trunk-width);
+	padding-top: 24px;
+//	padding-bottom: 32px;
+
+	div.post-meta {
+		@include title-font(12px, $text-colour, $accent-colour);
+		text-transform: uppercase;
+		margin-top: -2px;
+		margin-bottom: -8px;
+		@include h-list();
+		white-space: nowrap;
+		overflow: hidden;
+	}
+
+	h1 {
+		@include title-font(26px, $dark-colour, $accent-colour);
+		a { text-decoration: none; }
+		line-height: 1.2em;
+	}
+
+	h2 {
+		@include title-font(20px, $dark-colour, $accent-colour);
+		margin-bottom: $header-padding;
+		padding-top: $header-padding;
+		line-height: 1.2em;
+	}
+
+	h3 {
+		@include title-font(18px, $dark-colour, $accent-colour);
+		margin-bottom: $header-padding;
+		padding-top: $header-padding;
+		line-height: 1.2em;
+	}
+
+	font-family: "Lora", Georgia, Serif;
+	font-size: 18px;
+	color: $text-colour;
+	line-height: 1.5em;
+	@include link-colours($text-colour, $accent-colour);
+
+	em {
+		font-style: italic;
+	}
+
+	strong {
+		font-style: bold;	
+	}
+
+	sup {
+		font-size: 0.8em;
+		vertical-align: super;
+		line-height: 0;
+	}
+
+	p {
+		margin-bottom: $paragraph-padding;
+
+		img {
+			max-width: 100%;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: $paragraph-padding * 2;
+			margin-bottom: $paragraph-padding * 2;
+			border-radius: 4px;
+		}
+	}
+
+	iframe {
+		margin-bottom: $paragraph-padding;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: $paragraph-padding * 2;
+		margin-bottom: $paragraph-padding * 2;
+		border-radius: 4px;
+	}
+
+	code {
+		font-family: "Source Code Pro";
+		font-weight: 300;
+		line-height: 1.2;
+	}
+	pre {
+		padding: 8px 16px 8px 16px;
+		background-color:$text-colour;
+		margin-top: $paragraph-padding * 2;
+		margin-bottom: $paragraph-padding * 2;
+		border-radius: 4px;
+		code {
+			color: $light-text-colour;
+			font-size: 16px;
+		}
+	}
+
+	blockquote {
+		margin-top: $paragraph-padding * 2;
+		margin-bottom: $paragraph-padding * 2;
+		font-style: italic;
+		border-left: 0.4em solid $light-colour;
+		padding-right: 1.2em;
+		padding-left: 0.8em;
+		P {
+		}
+		p::before {
+			content: "“"; 
+		}
+		p::after {
+			content: "”"; 
+		}
+	}
+
+	ul {
+		margin-bottom: $paragraph-padding;
+		li {
+			padding-left: 1.2em;
+			text-indent: -1.2em;
+		}
+		li::before {
+			content: $bullet-point;
+			font-family: "Source Code Pro";
+			font-weight: 300;
+			color: $dark-colour;
+		}
+		ul {
+			li::before {
+				color: $accent-colour;
+			}
+			margin-bottom: 0px;
+			ul {
+				li::before {
+					color: $text-colour;
+				}
+			}
+		}
+	}
+
+	ol {
+		margin-bottom: $paragraph-padding;
+		list-style: none;
+		li {
+			counter-increment: step-counter;
+			padding-left: 1.2em;
+			text-indent: -1.2em;
+		}
+		li::before {
+			content: counter(step-counter) ".";
+			font-family: "Source Code Pro";
+			font-weight: 300;
+			color: $dark-colour;
+		}
+		li.footnote {
+			padding-left: 1em;
+			padding-right: 1em;
+			margin-bottom: 0.6em;
+			p {
+				display: inline;
+			}
+		}
+		ol {
+			margin-bottom: 0px;
+			li {
+				counter-increment: step-counter2;
+			}
+			li::before {
+				content: counter(step-counter2) ".";
+				color: $accent-colour;
+			}
+			ol {
+				li {
+					counter-increment: step-counter3;
+				}
+				li::before {
+					content: counter(step-counter3) ".";
+					color: $text-colour;
+				}
+			}
+		}
+	}
+}
+
+.pagination {
+	margin-top: 32px;
+	margin-bottom: 32px;
+	.newer-posts {
+		float: left;
+		@include button();
+	}
+	.page-number {
+		@include title-font(20px, $dark-colour, $accent-colour);
+		width: 100%;
+		text-align: center;
+		padding: 2px 4px 2px 4px;
+	}
+	.older-posts {
+		float: right;
+		@include button();
+	}
+}
+
+footer {
+	text-align: center;
+	margin-top: 32px;
+	section {
+		display: inline;
+		@include title-font(12px, $text-colour, $accent-colour);
+	}
+}
+
+
+@media only screen and (max-width: $bounding-width + ($side-padding * 2)) {
+	.bounding {
+		@include tight($side-padding);
+	}
+}
+
+@media only screen and (max-width: $trunk-width + ($side-padding * 2)) {
+	header#site-head {
+		text-align: center;
+	}
+	article {
+		@include tight($side-padding);
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	header#site-head {
+		h1 {
+			font-size: 46px;
+		}
+		nav {
+			font-size: 16px;
+		}
+	}
+	article {
+		h1 {
+			font-size: 22px;
+		}
+		h2 {
+			font-size: 18px;
+		}
+		h3 {
+			font-size: 16px;
+		}
+		font-size: 16px;
+	}
+	.pagination {
+		.newer-posts {
+			font-size: 20px;
+		}
+		.page-number {
+			font-size: 20px;
+		}
+		.older-posts {
+			font-size: 20px;
+		}
+	}
+}
+
+@media only screen and (max-width: 420px) {
+	header#site-head {
+		h1 {
+			font-size: 36px;
+		}
+		nav {
+			font-size: 14px;
+		}
+	}
+	article {
+		h1 {
+			font-size: 20px;
+		}
+		h2 {
+			font-size: 16px;
+		}
+		h3 {
+			font-size: 14px;
+		}
+		font-size: 14px;
+	}
+}
+

@@ -1,0 +1,8 @@
+<div class="post-meta">	
+	<ul>
+		<li><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time></li>
+		{{#foreach tags}}
+			<li><a href="{{url}}" title="{{name}}" class="tag-{{id}}">{{name}}</a></li>
+        {{/foreach}}
+	</ul>
+</div>
