@@ -68,13 +68,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 99, ../sass/screen.scss */
+/* line 100, ../sass/screen.scss */
 body {
   margin-top: 8px;
   margin-bottom: 8px;
 }
 
-/* line 104, ../sass/screen.scss */
+/* line 105, ../sass/screen.scss */
 .bounding {
   margin-left: auto;
   margin-right: auto;
@@ -82,19 +82,19 @@ body {
   max-width: 100%;
 }
 
-/* line 108, ../sass/screen.scss */
+/* line 109, ../sass/screen.scss */
 header#site-head {
   text-align: left;
-  padding-bottom: 16px;
+  padding-bottom: 8px;
 }
-/* line 113, ../sass/screen.scss */
+/* line 114, ../sass/screen.scss */
 header#site-head h1 {
   font-family: "Source Code Pro";
   font-weight: 200;
   font-size: 58px;
   margin-bottom: 6px;
 }
-/* line 52, ../sass/screen.scss */
+/* line 53, ../sass/screen.scss */
 header#site-head h1 a {
   -o-transition: .5s;
   -ms-transition: .5s;
@@ -102,35 +102,35 @@ header#site-head h1 a {
   -webkit-transition: .5s;
   transition: .5s;
 }
-/* line 59, ../sass/screen.scss */
+/* line 60, ../sass/screen.scss */
 header#site-head h1 a:link {
   color: #4DB6AC;
 }
-/* line 60, ../sass/screen.scss */
+/* line 61, ../sass/screen.scss */
 header#site-head h1 a:visited {
   color: #4DB6AC;
 }
-/* line 61, ../sass/screen.scss */
+/* line 62, ../sass/screen.scss */
 header#site-head h1 a:hover {
   color: #FF6E40;
 }
-/* line 62, ../sass/screen.scss */
+/* line 63, ../sass/screen.scss */
 header#site-head h1 a:active {
   color: #FF6E40;
 }
-/* line 118, ../sass/screen.scss */
+/* line 119, ../sass/screen.scss */
 header#site-head h1 a {
   text-decoration: none;
 }
-/* line 120, ../sass/screen.scss */
+/* line 121, ../sass/screen.scss */
 header#site-head h1 a em {
   color: #009688;
 }
-/* line 129, ../sass/screen.scss */
+/* line 130, ../sass/screen.scss */
 header#site-head p {
   display: none;
 }
-/* line 132, ../sass/screen.scss */
+/* line 133, ../sass/screen.scss */
 header#site-head nav {
   font-family: "Source Code Pro";
   font-weight: 300;
@@ -138,7 +138,7 @@ header#site-head nav {
   color: rgba(0, 0, 0, 0.8);
   text-transform: uppercase;
 }
-/* line 52, ../sass/screen.scss */
+/* line 53, ../sass/screen.scss */
 header#site-head nav a {
   -o-transition: .5s;
   -ms-transition: .5s;
@@ -146,56 +146,82 @@ header#site-head nav a {
   -webkit-transition: .5s;
   transition: .5s;
 }
-/* line 59, ../sass/screen.scss */
+/* line 60, ../sass/screen.scss */
 header#site-head nav a:link {
   color: rgba(0, 0, 0, 0.8);
 }
-/* line 60, ../sass/screen.scss */
+/* line 61, ../sass/screen.scss */
 header#site-head nav a:visited {
   color: rgba(0, 0, 0, 0.8);
 }
-/* line 61, ../sass/screen.scss */
+/* line 62, ../sass/screen.scss */
 header#site-head nav a:hover {
   color: #FF6E40;
 }
-/* line 62, ../sass/screen.scss */
+/* line 63, ../sass/screen.scss */
 header#site-head nav a:active {
   color: #FF6E40;
 }
-/* line 66, ../sass/screen.scss */
+/* line 67, ../sass/screen.scss */
 header#site-head nav a {
   text-decoration: none;
 }
-/* line 67, ../sass/screen.scss */
+/* line 68, ../sass/screen.scss */
 header#site-head nav li {
   display: inline;
   list-style-type: none;
   padding-left: 0em;
   text-indent: 0em;
 }
-/* line 73, ../sass/screen.scss */
+/* line 74, ../sass/screen.scss */
 header#site-head nav li::before {
   content: "";
 }
-/* line 76, ../sass/screen.scss */
+/* line 77, ../sass/screen.scss */
 header#site-head nav li + li::before {
   color: #FF6E40;
   content: "* ";
 }
 
-/* line 140, ../sass/screen.scss */
+/* line 141, ../sass/screen.scss */
+section.post-excerpt p:not(:first-child) {
+  display: none;
+}
+/* line 144, ../sass/screen.scss */
+section.post-excerpt h2 {
+  display: none;
+}
+/* line 147, ../sass/screen.scss */
+section.post-excerpt h3 {
+  display: none;
+}
+
+/* line 152, ../sass/screen.scss */
+a.mixed {
+  text-decoration: none;
+}
+/* line 154, ../sass/screen.scss */
+a.mixed span.mark {
+  text-decoration: none;
+}
+/* line 157, ../sass/screen.scss */
+a.mixed span.no_mark {
+  text-decoration: underline;
+}
+
+/* line 162, ../sass/screen.scss */
 article {
   margin-left: auto;
   margin-right: auto;
   width: 640px;
   max-width: 100%;
-  padding-top: 24px;
+  padding-top: 32px;
   font-family: "Lora", Georgia, Serif;
   font-size: 18px;
   color: rgba(0, 0, 0, 0.8);
   line-height: 1.5em;
 }
-/* line 145, ../sass/screen.scss */
+/* line 167, ../sass/screen.scss */
 article div.post-meta {
   font-family: "Source Code Pro";
   font-weight: 300;
@@ -207,7 +233,7 @@ article div.post-meta {
   white-space: nowrap;
   overflow: hidden;
 }
-/* line 52, ../sass/screen.scss */
+/* line 53, ../sass/screen.scss */
 article div.post-meta a {
   -o-transition: .5s;
   -ms-transition: .5s;
@@ -215,43 +241,43 @@ article div.post-meta a {
   -webkit-transition: .5s;
   transition: .5s;
 }
-/* line 59, ../sass/screen.scss */
+/* line 60, ../sass/screen.scss */
 article div.post-meta a:link {
   color: rgba(0, 0, 0, 0.8);
 }
-/* line 60, ../sass/screen.scss */
+/* line 61, ../sass/screen.scss */
 article div.post-meta a:visited {
   color: rgba(0, 0, 0, 0.8);
 }
-/* line 61, ../sass/screen.scss */
+/* line 62, ../sass/screen.scss */
 article div.post-meta a:hover {
   color: #FF6E40;
 }
-/* line 62, ../sass/screen.scss */
+/* line 63, ../sass/screen.scss */
 article div.post-meta a:active {
   color: #FF6E40;
 }
-/* line 66, ../sass/screen.scss */
+/* line 67, ../sass/screen.scss */
 article div.post-meta a {
   text-decoration: none;
 }
-/* line 67, ../sass/screen.scss */
+/* line 68, ../sass/screen.scss */
 article div.post-meta li {
   display: inline;
   list-style-type: none;
   padding-left: 0em;
   text-indent: 0em;
 }
-/* line 73, ../sass/screen.scss */
+/* line 74, ../sass/screen.scss */
 article div.post-meta li::before {
   content: "";
 }
-/* line 76, ../sass/screen.scss */
+/* line 77, ../sass/screen.scss */
 article div.post-meta li + li::before {
   color: #FF6E40;
   content: "* ";
 }
-/* line 155, ../sass/screen.scss */
+/* line 177, ../sass/screen.scss */
 article h1 {
   font-family: "Source Code Pro";
   font-weight: 300;
@@ -259,7 +285,7 @@ article h1 {
   color: #00796B;
   line-height: 1.2em;
 }
-/* line 52, ../sass/screen.scss */
+/* line 53, ../sass/screen.scss */
 article h1 a {
   -o-transition: .5s;
   -ms-transition: .5s;
@@ -267,27 +293,27 @@ article h1 a {
   -webkit-transition: .5s;
   transition: .5s;
 }
-/* line 59, ../sass/screen.scss */
+/* line 60, ../sass/screen.scss */
 article h1 a:link {
   color: #00796B;
 }
-/* line 60, ../sass/screen.scss */
+/* line 61, ../sass/screen.scss */
 article h1 a:visited {
   color: #00796B;
 }
-/* line 61, ../sass/screen.scss */
+/* line 62, ../sass/screen.scss */
 article h1 a:hover {
   color: #FF6E40;
 }
-/* line 62, ../sass/screen.scss */
+/* line 63, ../sass/screen.scss */
 article h1 a:active {
   color: #FF6E40;
 }
-/* line 157, ../sass/screen.scss */
+/* line 179, ../sass/screen.scss */
 article h1 a {
   text-decoration: none;
 }
-/* line 161, ../sass/screen.scss */
+/* line 183, ../sass/screen.scss */
 article h2 {
   font-family: "Source Code Pro";
   font-weight: 300;
@@ -297,7 +323,7 @@ article h2 {
   padding-top: 0.25em;
   line-height: 1.2em;
 }
-/* line 52, ../sass/screen.scss */
+/* line 53, ../sass/screen.scss */
 article h2 a {
   -o-transition: .5s;
   -ms-transition: .5s;
@@ -305,23 +331,23 @@ article h2 a {
   -webkit-transition: .5s;
   transition: .5s;
 }
-/* line 59, ../sass/screen.scss */
+/* line 60, ../sass/screen.scss */
 article h2 a:link {
   color: #00796B;
 }
-/* line 60, ../sass/screen.scss */
+/* line 61, ../sass/screen.scss */
 article h2 a:visited {
   color: #00796B;
 }
-/* line 61, ../sass/screen.scss */
+/* line 62, ../sass/screen.scss */
 article h2 a:hover {
   color: #FF6E40;
 }
-/* line 62, ../sass/screen.scss */
+/* line 63, ../sass/screen.scss */
 article h2 a:active {
   color: #FF6E40;
 }
-/* line 168, ../sass/screen.scss */
+/* line 190, ../sass/screen.scss */
 article h3 {
   font-family: "Source Code Pro";
   font-weight: 300;
@@ -331,7 +357,7 @@ article h3 {
   padding-top: 0.25em;
   line-height: 1.2em;
 }
-/* line 52, ../sass/screen.scss */
+/* line 53, ../sass/screen.scss */
 article h3 a {
   -o-transition: .5s;
   -ms-transition: .5s;
@@ -339,23 +365,23 @@ article h3 a {
   -webkit-transition: .5s;
   transition: .5s;
 }
-/* line 59, ../sass/screen.scss */
+/* line 60, ../sass/screen.scss */
 article h3 a:link {
   color: #00796B;
 }
-/* line 60, ../sass/screen.scss */
+/* line 61, ../sass/screen.scss */
 article h3 a:visited {
   color: #00796B;
 }
-/* line 61, ../sass/screen.scss */
+/* line 62, ../sass/screen.scss */
 article h3 a:hover {
   color: #FF6E40;
 }
-/* line 62, ../sass/screen.scss */
+/* line 63, ../sass/screen.scss */
 article h3 a:active {
   color: #FF6E40;
 }
-/* line 52, ../sass/screen.scss */
+/* line 53, ../sass/screen.scss */
 article a {
   -o-transition: .5s;
   -ms-transition: .5s;
@@ -363,41 +389,41 @@ article a {
   -webkit-transition: .5s;
   transition: .5s;
 }
-/* line 59, ../sass/screen.scss */
+/* line 60, ../sass/screen.scss */
 article a:link {
   color: rgba(0, 0, 0, 0.8);
 }
-/* line 60, ../sass/screen.scss */
+/* line 61, ../sass/screen.scss */
 article a:visited {
   color: rgba(0, 0, 0, 0.8);
 }
-/* line 61, ../sass/screen.scss */
+/* line 62, ../sass/screen.scss */
 article a:hover {
   color: #FF6E40;
 }
-/* line 62, ../sass/screen.scss */
+/* line 63, ../sass/screen.scss */
 article a:active {
   color: #FF6E40;
 }
-/* line 181, ../sass/screen.scss */
+/* line 203, ../sass/screen.scss */
 article em {
   font-style: italic;
 }
-/* line 185, ../sass/screen.scss */
+/* line 207, ../sass/screen.scss */
 article strong {
   font-style: bold;
 }
-/* line 189, ../sass/screen.scss */
+/* line 211, ../sass/screen.scss */
 article sup {
   font-size: 0.8em;
   vertical-align: super;
   line-height: 0;
 }
-/* line 195, ../sass/screen.scss */
+/* line 217, ../sass/screen.scss */
 article p {
   margin-bottom: 0.8em;
 }
-/* line 198, ../sass/screen.scss */
+/* line 220, ../sass/screen.scss */
 article p img {
   max-width: 100%;
   display: block;
@@ -407,7 +433,7 @@ article p img {
   margin-bottom: 1.6em;
   border-radius: 4px;
 }
-/* line 209, ../sass/screen.scss */
+/* line 231, ../sass/screen.scss */
 article iframe {
   margin-bottom: 0.8em;
   display: block;
@@ -417,13 +443,13 @@ article iframe {
   margin-bottom: 1.6em;
   border-radius: 4px;
 }
-/* line 219, ../sass/screen.scss */
+/* line 241, ../sass/screen.scss */
 article code {
   font-family: "Source Code Pro";
   font-weight: 300;
   line-height: 1.2;
 }
-/* line 224, ../sass/screen.scss */
+/* line 246, ../sass/screen.scss */
 article pre {
   padding: 8px 16px 8px 16px;
   background-color: rgba(0, 0, 0, 0.8);
@@ -431,12 +457,12 @@ article pre {
   margin-bottom: 1.6em;
   border-radius: 4px;
 }
-/* line 230, ../sass/screen.scss */
+/* line 252, ../sass/screen.scss */
 article pre code {
   color: rgba(255, 255, 255, 0.8);
   font-size: 16px;
 }
-/* line 236, ../sass/screen.scss */
+/* line 258, ../sass/screen.scss */
 article blockquote {
   margin-top: 1.6em;
   margin-bottom: 1.6em;
@@ -445,99 +471,239 @@ article blockquote {
   padding-right: 1.2em;
   padding-left: 0.8em;
 }
-/* line 245, ../sass/screen.scss */
+/* line 267, ../sass/screen.scss */
 article blockquote p::before {
   content: "“";
 }
-/* line 248, ../sass/screen.scss */
+/* line 270, ../sass/screen.scss */
 article blockquote p::after {
   content: "”";
 }
-/* line 253, ../sass/screen.scss */
+/* line 275, ../sass/screen.scss */
 article ul {
   margin-bottom: 0.8em;
 }
-/* line 255, ../sass/screen.scss */
+/* line 277, ../sass/screen.scss */
 article ul li {
   padding-left: 1.2em;
   text-indent: -1.2em;
 }
-/* line 259, ../sass/screen.scss */
+/* line 281, ../sass/screen.scss */
 article ul li::before {
   content: "* ";
   font-family: "Source Code Pro";
   font-weight: 300;
   color: #00796B;
 }
-/* line 265, ../sass/screen.scss */
+/* line 287, ../sass/screen.scss */
 article ul ul {
   margin-bottom: 0px;
 }
-/* line 266, ../sass/screen.scss */
+/* line 288, ../sass/screen.scss */
 article ul ul li::before {
   color: #FF6E40;
 }
-/* line 271, ../sass/screen.scss */
+/* line 293, ../sass/screen.scss */
 article ul ul ul li::before {
   color: rgba(0, 0, 0, 0.8);
 }
-/* line 278, ../sass/screen.scss */
+/* line 300, ../sass/screen.scss */
 article ol {
   margin-bottom: 0.8em;
   list-style: none;
 }
-/* line 281, ../sass/screen.scss */
+/* line 303, ../sass/screen.scss */
 article ol li {
   counter-increment: step-counter;
   padding-left: 1.2em;
   text-indent: -1.2em;
 }
-/* line 286, ../sass/screen.scss */
+/* line 308, ../sass/screen.scss */
 article ol li::before {
   content: counter(step-counter) ".";
   font-family: "Source Code Pro";
   font-weight: 300;
   color: #00796B;
 }
-/* line 292, ../sass/screen.scss */
+/* line 314, ../sass/screen.scss */
 article ol li.footnote {
   padding-left: 1em;
   padding-right: 1em;
   margin-bottom: 0.6em;
 }
-/* line 296, ../sass/screen.scss */
+/* line 318, ../sass/screen.scss */
 article ol li.footnote p {
   display: inline;
 }
-/* line 300, ../sass/screen.scss */
+/* line 322, ../sass/screen.scss */
 article ol ol {
   margin-bottom: 0px;
 }
-/* line 302, ../sass/screen.scss */
+/* line 324, ../sass/screen.scss */
 article ol ol li {
   counter-increment: step-counter2;
 }
-/* line 305, ../sass/screen.scss */
+/* line 327, ../sass/screen.scss */
 article ol ol li::before {
   content: counter(step-counter2) ".";
   color: #FF6E40;
 }
-/* line 310, ../sass/screen.scss */
+/* line 332, ../sass/screen.scss */
 article ol ol ol li {
   counter-increment: step-counter3;
 }
-/* line 313, ../sass/screen.scss */
+/* line 335, ../sass/screen.scss */
 article ol ol ol li::before {
   content: counter(step-counter3) ".";
   color: rgba(0, 0, 0, 0.8);
 }
+/* line 342, ../sass/screen.scss */
+article section.share {
+  text-align: right;
+  font-family: "Source Code Pro";
+  font-weight: 300;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.8);
+}
+/* line 53, ../sass/screen.scss */
+article section.share a {
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+/* line 60, ../sass/screen.scss */
+article section.share a:link {
+  color: rgba(0, 0, 0, 0.8);
+}
+/* line 61, ../sass/screen.scss */
+article section.share a:visited {
+  color: rgba(0, 0, 0, 0.8);
+}
+/* line 62, ../sass/screen.scss */
+article section.share a:hover {
+  color: #FF6E40;
+}
+/* line 63, ../sass/screen.scss */
+article section.share a:active {
+  color: #FF6E40;
+}
+/* line 345, ../sass/screen.scss */
+article section.share a {
+  text-decoration: none;
+}
+/* line 348, ../sass/screen.scss */
+article section.share span::before {
+  content: " ";
+}
+/* line 351, ../sass/screen.scss */
+article section.share span + span::before {
+  content: " " "* ";
+}
+/* line 53, ../sass/screen.scss */
+article section.share span.twitter a {
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+/* line 60, ../sass/screen.scss */
+article section.share span.twitter a:link {
+  color: #55ACEE;
+}
+/* line 61, ../sass/screen.scss */
+article section.share span.twitter a:visited {
+  color: #55ACEE;
+}
+/* line 62, ../sass/screen.scss */
+article section.share span.twitter a:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+/* line 63, ../sass/screen.scss */
+article section.share span.twitter a:active {
+  color: rgba(0, 0, 0, 0.8);
+}
+/* line 53, ../sass/screen.scss */
+article section.share span.facebook a {
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+/* line 60, ../sass/screen.scss */
+article section.share span.facebook a:link {
+  color: #3B5998;
+}
+/* line 61, ../sass/screen.scss */
+article section.share span.facebook a:visited {
+  color: #3B5998;
+}
+/* line 62, ../sass/screen.scss */
+article section.share span.facebook a:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+/* line 63, ../sass/screen.scss */
+article section.share span.facebook a:active {
+  color: rgba(0, 0, 0, 0.8);
+}
+/* line 53, ../sass/screen.scss */
+article section.share span.googleplus a {
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+/* line 60, ../sass/screen.scss */
+article section.share span.googleplus a:link {
+  color: #DD4B39;
+}
+/* line 61, ../sass/screen.scss */
+article section.share span.googleplus a:visited {
+  color: #DD4B39;
+}
+/* line 62, ../sass/screen.scss */
+article section.share span.googleplus a:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+/* line 63, ../sass/screen.scss */
+article section.share span.googleplus a:active {
+  color: rgba(0, 0, 0, 0.8);
+}
+/* line 53, ../sass/screen.scss */
+article section.share span.reddit a {
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+/* line 60, ../sass/screen.scss */
+article section.share span.reddit a:link {
+  color: #C6C6C6;
+}
+/* line 61, ../sass/screen.scss */
+article section.share span.reddit a:visited {
+  color: #C6C6C6;
+}
+/* line 62, ../sass/screen.scss */
+article section.share span.reddit a:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+/* line 63, ../sass/screen.scss */
+article section.share span.reddit a:active {
+  color: rgba(0, 0, 0, 0.8);
+}
 
-/* line 322, ../sass/screen.scss */
+/* line 369, ../sass/screen.scss */
 .pagination {
   margin-top: 32px;
   margin-bottom: 32px;
 }
-/* line 325, ../sass/screen.scss */
+/* line 372, ../sass/screen.scss */
 .pagination .newer-posts {
   float: left;
   font-family: "Source Code Pro";
@@ -548,7 +714,7 @@ article ol ol ol li::before {
   padding: 2px 4px 2px 4px;
   border-radius: 4px;
 }
-/* line 52, ../sass/screen.scss */
+/* line 53, ../sass/screen.scss */
 .pagination .newer-posts a {
   -o-transition: .5s;
   -ms-transition: .5s;
@@ -556,27 +722,27 @@ article ol ol ol li::before {
   -webkit-transition: .5s;
   transition: .5s;
 }
-/* line 59, ../sass/screen.scss */
+/* line 60, ../sass/screen.scss */
 .pagination .newer-posts a:link {
   color: rgba(0, 0, 0, 0.8);
 }
-/* line 60, ../sass/screen.scss */
+/* line 61, ../sass/screen.scss */
 .pagination .newer-posts a:visited {
   color: rgba(0, 0, 0, 0.8);
 }
-/* line 61, ../sass/screen.scss */
+/* line 62, ../sass/screen.scss */
 .pagination .newer-posts a:hover {
   color: #FF6E40;
 }
-/* line 62, ../sass/screen.scss */
+/* line 63, ../sass/screen.scss */
 .pagination .newer-posts a:active {
   color: #FF6E40;
 }
-/* line 93, ../sass/screen.scss */
+/* line 94, ../sass/screen.scss */
 .pagination .newer-posts a {
   text-decoration: none;
 }
-/* line 329, ../sass/screen.scss */
+/* line 376, ../sass/screen.scss */
 .pagination .page-number {
   font-family: "Source Code Pro";
   font-weight: 300;
@@ -586,7 +752,7 @@ article ol ol ol li::before {
   text-align: center;
   padding: 2px 4px 2px 4px;
 }
-/* line 52, ../sass/screen.scss */
+/* line 53, ../sass/screen.scss */
 .pagination .page-number a {
   -o-transition: .5s;
   -ms-transition: .5s;
@@ -594,23 +760,23 @@ article ol ol ol li::before {
   -webkit-transition: .5s;
   transition: .5s;
 }
-/* line 59, ../sass/screen.scss */
+/* line 60, ../sass/screen.scss */
 .pagination .page-number a:link {
   color: #00796B;
 }
-/* line 60, ../sass/screen.scss */
+/* line 61, ../sass/screen.scss */
 .pagination .page-number a:visited {
   color: #00796B;
 }
-/* line 61, ../sass/screen.scss */
+/* line 62, ../sass/screen.scss */
 .pagination .page-number a:hover {
   color: #FF6E40;
 }
-/* line 62, ../sass/screen.scss */
+/* line 63, ../sass/screen.scss */
 .pagination .page-number a:active {
   color: #FF6E40;
 }
-/* line 335, ../sass/screen.scss */
+/* line 382, ../sass/screen.scss */
 .pagination .older-posts {
   float: right;
   font-family: "Source Code Pro";
@@ -621,7 +787,7 @@ article ol ol ol li::before {
   padding: 2px 4px 2px 4px;
   border-radius: 4px;
 }
-/* line 52, ../sass/screen.scss */
+/* line 53, ../sass/screen.scss */
 .pagination .older-posts a {
   -o-transition: .5s;
   -ms-transition: .5s;
@@ -629,33 +795,33 @@ article ol ol ol li::before {
   -webkit-transition: .5s;
   transition: .5s;
 }
-/* line 59, ../sass/screen.scss */
+/* line 60, ../sass/screen.scss */
 .pagination .older-posts a:link {
   color: rgba(0, 0, 0, 0.8);
 }
-/* line 60, ../sass/screen.scss */
+/* line 61, ../sass/screen.scss */
 .pagination .older-posts a:visited {
   color: rgba(0, 0, 0, 0.8);
 }
-/* line 61, ../sass/screen.scss */
+/* line 62, ../sass/screen.scss */
 .pagination .older-posts a:hover {
   color: #FF6E40;
 }
-/* line 62, ../sass/screen.scss */
+/* line 63, ../sass/screen.scss */
 .pagination .older-posts a:active {
   color: #FF6E40;
 }
-/* line 93, ../sass/screen.scss */
+/* line 94, ../sass/screen.scss */
 .pagination .older-posts a {
   text-decoration: none;
 }
 
-/* line 341, ../sass/screen.scss */
+/* line 388, ../sass/screen.scss */
 footer {
   text-align: center;
   margin-top: 32px;
 }
-/* line 344, ../sass/screen.scss */
+/* line 391, ../sass/screen.scss */
 footer section {
   display: inline;
   font-family: "Source Code Pro";
@@ -663,7 +829,7 @@ footer section {
   font-size: 12px;
   color: rgba(0, 0, 0, 0.8);
 }
-/* line 52, ../sass/screen.scss */
+/* line 53, ../sass/screen.scss */
 footer section a {
   -o-transition: .5s;
   -ms-transition: .5s;
@@ -671,25 +837,25 @@ footer section a {
   -webkit-transition: .5s;
   transition: .5s;
 }
-/* line 59, ../sass/screen.scss */
+/* line 60, ../sass/screen.scss */
 footer section a:link {
   color: rgba(0, 0, 0, 0.8);
 }
-/* line 60, ../sass/screen.scss */
+/* line 61, ../sass/screen.scss */
 footer section a:visited {
   color: rgba(0, 0, 0, 0.8);
 }
-/* line 61, ../sass/screen.scss */
+/* line 62, ../sass/screen.scss */
 footer section a:hover {
   color: #FF6E40;
 }
-/* line 62, ../sass/screen.scss */
+/* line 63, ../sass/screen.scss */
 footer section a:active {
   color: #FF6E40;
 }
 
 @media only screen and (max-width: 976px) {
-  /* line 352, ../sass/screen.scss */
+  /* line 399, ../sass/screen.scss */
   .bounding {
     margin-left: 8px;
     margin-right: 8px;
@@ -698,12 +864,12 @@ footer section a:active {
   }
 }
 @media only screen and (max-width: 656px) {
-  /* line 358, ../sass/screen.scss */
+  /* line 405, ../sass/screen.scss */
   header#site-head {
     text-align: center;
   }
 
-  /* line 361, ../sass/screen.scss */
+  /* line 408, ../sass/screen.scss */
   article {
     margin-left: 8px;
     margin-right: 8px;
@@ -712,69 +878,81 @@ footer section a:active {
   }
 }
 @media only screen and (max-width: 600px) {
-  /* line 368, ../sass/screen.scss */
+  /* line 415, ../sass/screen.scss */
   header#site-head h1 {
     font-size: 46px;
   }
-  /* line 371, ../sass/screen.scss */
+  /* line 418, ../sass/screen.scss */
   header#site-head nav {
     font-size: 16px;
   }
 
-  /* line 375, ../sass/screen.scss */
+  /* line 422, ../sass/screen.scss */
   article {
     font-size: 16px;
   }
-  /* line 376, ../sass/screen.scss */
+  /* line 423, ../sass/screen.scss */
   article h1 {
     font-size: 22px;
   }
-  /* line 379, ../sass/screen.scss */
+  /* line 426, ../sass/screen.scss */
   article h2 {
     font-size: 18px;
   }
-  /* line 382, ../sass/screen.scss */
+  /* line 429, ../sass/screen.scss */
   article h3 {
     font-size: 16px;
   }
+  /* line 433, ../sass/screen.scss */
+  article section.share {
+    font-size: 16px;
+  }
+  /* line 435, ../sass/screen.scss */
+  article section.share span + span::before {
+    content: " ";
+  }
 
-  /* line 388, ../sass/screen.scss */
+  /* line 441, ../sass/screen.scss */
   .pagination .newer-posts {
     font-size: 20px;
   }
-  /* line 391, ../sass/screen.scss */
+  /* line 444, ../sass/screen.scss */
   .pagination .page-number {
     font-size: 20px;
   }
-  /* line 394, ../sass/screen.scss */
+  /* line 447, ../sass/screen.scss */
   .pagination .older-posts {
     font-size: 20px;
   }
 }
 @media only screen and (max-width: 420px) {
-  /* line 402, ../sass/screen.scss */
+  /* line 455, ../sass/screen.scss */
   header#site-head h1 {
     font-size: 36px;
   }
-  /* line 405, ../sass/screen.scss */
+  /* line 458, ../sass/screen.scss */
   header#site-head nav {
     font-size: 14px;
   }
 
-  /* line 409, ../sass/screen.scss */
+  /* line 462, ../sass/screen.scss */
   article {
     font-size: 14px;
   }
-  /* line 410, ../sass/screen.scss */
+  /* line 463, ../sass/screen.scss */
   article h1 {
     font-size: 20px;
   }
-  /* line 413, ../sass/screen.scss */
+  /* line 466, ../sass/screen.scss */
   article h2 {
     font-size: 16px;
   }
-  /* line 416, ../sass/screen.scss */
+  /* line 469, ../sass/screen.scss */
   article h3 {
+    font-size: 14px;
+  }
+  /* line 473, ../sass/screen.scss */
+  article section.share {
     font-size: 14px;
   }
 }

@@ -3,6 +3,7 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
+
 @import "compass/reset";
 
 $main-colour: #009688;
@@ -108,7 +109,7 @@ body {
 header#site-head {
 	text-align: left;
 
-	padding-bottom: 16px;
+	padding-bottom: 8px;
 
 	h1 {
 		font-family: "Source Code Pro";
@@ -136,10 +137,31 @@ header#site-head {
 	}
 }
 
+section.post-excerpt {
+	p:not(:first-child) {
+		display: none;
+	}
+	h2 {
+		display: none;
+	}
+	h3 {
+		display: none;
+	}
+}
+
+a.mixed {
+	text-decoration: none;
+	span.mark {
+		text-decoration: none;
+	}
+	span.no_mark {
+		text-decoration: underline;
+	}
+}
 
 article {
 	@include central($trunk-width);
-	padding-top: 24px;
+	padding-top: 32px;
 //	padding-bottom: 32px;
 
 	div.post-meta {
@@ -317,6 +339,31 @@ article {
 			}
 		}
 	}
+	section.share {
+		text-align: right;
+		@include title-font(18px, $text-colour, $accent-colour);
+		a {
+			text-decoration: none;
+		}
+		span::before {
+			content: " ";
+		}
+		span + span::before {
+			content: " " $bullet-point;
+		}
+		span.twitter {
+			@include link-colours(#55ACEE, $text-colour);
+		}
+		span.facebook {
+			@include link-colours(#3B5998, $text-colour);
+		}
+		span.googleplus {
+			@include link-colours(#DD4B39, $text-colour);
+		}
+		span.reddit {
+			@include link-colours(#C6C6C6, $text-colour);
+		}
+	}
 }
 
 .pagination {
@@ -383,6 +430,12 @@ footer {
 			font-size: 16px;
 		}
 		font-size: 16px;
+		section.share {
+			font-size: 16px;
+			span + span::before {
+				content: " ";
+			}
+		}
 	}
 	.pagination {
 		.newer-posts {
@@ -417,6 +470,9 @@ footer {
 			font-size: 14px;
 		}
 		font-size: 14px;
+		section.share {
+			font-size: 14px;
+		}
 	}
 }
 

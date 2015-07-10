@@ -5,10 +5,8 @@
     {{> article-header}}
     {{> article-meta}}
     <section class="post-excerpt">
-        <p>
-        	{{excerpt words="100"}}&hellip;
-        	-&nbsp;<a href="{{url}}">Read this article <i class="fa fa-chevron-circle-right"></i></a>
-        </p>
+        {{content words="100"}}
+       	<a class="mixed" href="{{url}}"><span class="no_mark">Read this post</span><span class="mark"> ☛</span></a> 
     </section>
 </article>
 {{/foreach}}
