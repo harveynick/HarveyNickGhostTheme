@@ -4,6 +4,9 @@
 <article class="preview">
     {{> article-header}}
     {{> article-meta}}
+    {{#if image}}
+		<p class="crop"><a href="{{url}}"><img class="header_image" src="{{image}}"></img></a></p>
+    {{/if}}
     <section class="post-excerpt">
         {{content words="100"}}
        	<a class="mixed" href="{{url}}"><span class="no_mark">Read this post</span><span class="mark"> ☛</span></a> 
