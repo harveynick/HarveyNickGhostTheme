@@ -100,10 +100,11 @@ $bullet-point: "* ";
 body {
 	margin-top: 8px;
 	margin-bottom: 8px;
+	@include central($bounding-width);
 }
 
 .bounding {
-	@include central($bounding-width);
+	width: 100%;
 }
 
 header#site-head {
@@ -160,8 +161,15 @@ a.mixed {
 	}
 }
 
-article {
+article > * {
 	@include central($trunk-width);
+}
+
+article > .wide {
+	width: 100%;
+}
+
+article {
 	padding-top: 32px;
 //	padding-bottom: 32px;
 
@@ -434,7 +442,7 @@ footer {
 
 
 @media only screen and (max-width: $bounding-width + ($side-padding * 2)) {
-	.bounding {
+	body {
 		@include tight($side-padding);
 	}
 }
@@ -442,9 +450,6 @@ footer {
 @media only screen and (max-width: $trunk-width + ($side-padding * 2)) {
 	header#site-head {
 		text-align: center;
-	}
-	article {
-		@include tight($side-padding);
 	}
 }
 
