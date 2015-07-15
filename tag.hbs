@@ -1,1 +1,31 @@
-{{!< index}}
+{{!< default}}
+
+{{#tag}}
+<article class="tag">
+    <header>
+		<h1 class="tag-name">I am a {{{name}}}</h1>
+	</header>
+    {{#if image}}
+		<p class="crop"><img class="header_image" src="{{image}}"></img></p>
+    {{/if}}
+    <section class="post-excerpt">
+        {{description}}
+    </section>
+</article>
+{{/tag}}
+
+{{#foreach posts}}
+<article class="preview">
+    {{> article-header}}
+    {{> article-meta}}
+    {{#if image}}
+		<p class="crop"><a href="{{url}}"><img class="header_image" src="{{image}}"></img></a></p>
+    {{/if}}
+    <section class="post-excerpt">
+        {{content words="100"}}
+       	<a class="mixed" href="{{url}}"><span class="no_mark">Read this post</span><span class="mark"> ☛</span></a> 
+    </section>
+</article>
+{{/foreach}}
+
+{{pagination}}
