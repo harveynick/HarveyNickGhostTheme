@@ -13,7 +13,7 @@ $accent-colour: #FF9100;
 $text-colour: rgba(0, 0, 0, 0.8);
 $light-text-colour: rgba(255, 255, 255, 0.8);
 
-$header-padding: 0.25em;
+$header-padding: 0.4em;
 $paragraph-padding: 0.8em;
 $side-padding: 12px;
 
@@ -189,11 +189,14 @@ article {
 		line-height: 1.2em;
 	}
 
+	h1.tag-name {
+		margin-bottom: 8px;
+	}
+
 	h2 {
 		@include title-font(20px, $dark-colour, $accent-colour);
 		margin-bottom: $header-padding;
 		padding-top: $header-padding;
-		line-height: 1.2em;
 		a::after{
 			content: " ☛";
 		}
@@ -203,7 +206,6 @@ article {
 		@include title-font(18px, $dark-colour, $accent-colour);
 		margin-bottom: $header-padding;
 		padding-top: $header-padding;
-		line-height: 1.2em;
 		a::after{
 			content: " ☛";
 		}
@@ -473,6 +475,9 @@ footer {
 			font-size: 16px;
 		}
 		font-size: 16px;
+		p.crop {
+			height: 100px;
+		}
 		section.share {
 			font-size: 16px;
 			span + span::before {
@@ -513,6 +518,9 @@ footer {
 			font-size: 14px;
 		}
 		font-size: 14px;
+		p.crop {
+			height: 80px;
+		}
 		section.share {
 			font-size: 14px;
 		}
