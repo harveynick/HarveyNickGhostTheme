@@ -284,12 +284,13 @@ article {
 		line-height: 1.2;
 	}
 	pre {
-		padding: 8px 16px 8px 16px;
+		padding: 8px 0px 8px 0px;
 		background-color:$text-colour;
 		margin-top: $paragraph-padding * 2;
 		margin-bottom: $paragraph-padding * 2;
 		border-radius: 4px;
 		code {
+			padding: 0px 16px 0px 16px;
 			color: $light-text-colour;
 			font-size: 16px;
 		}
