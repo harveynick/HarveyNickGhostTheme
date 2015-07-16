@@ -91,9 +91,14 @@ header#site-head {
 /* line 115, ../sass/screen.scss */
 header#site-head h1 {
   font-family: "Source Code Pro";
-  font-weight: 200;
+  font-weight: 300;
   font-size: 58px;
+  color: #4DB6AC;
   margin-bottom: 6px;
+}
+/* line 87, ../sass/screen.scss */
+header#site-head h1 a {
+  text-decoration: none;
 }
 /* line 57, ../sass/screen.scss */
 header#site-head h1 a {
@@ -119,19 +124,19 @@ header#site-head h1 a:hover {
 header#site-head h1 a:active {
   color: #FF9100;
 }
-/* line 120, ../sass/screen.scss */
+/* line 117, ../sass/screen.scss */
 header#site-head h1 a {
   text-decoration: none;
 }
-/* line 122, ../sass/screen.scss */
+/* line 119, ../sass/screen.scss */
 header#site-head h1 a em {
   color: #009688;
 }
-/* line 131, ../sass/screen.scss */
+/* line 128, ../sass/screen.scss */
 header#site-head p {
   display: none;
 }
-/* line 134, ../sass/screen.scss */
+/* line 131, ../sass/screen.scss */
 header#site-head nav {
   font-family: "Source Code Pro";
   font-weight: 300;
@@ -188,33 +193,33 @@ header#site-head nav li + li::before {
   content: "* ";
 }
 
-/* line 143, ../sass/screen.scss */
+/* line 140, ../sass/screen.scss */
 section.post-excerpt p:not(:first-child) {
   display: none;
 }
-/* line 146, ../sass/screen.scss */
+/* line 143, ../sass/screen.scss */
 section.post-excerpt h2 {
   display: none;
 }
-/* line 149, ../sass/screen.scss */
+/* line 146, ../sass/screen.scss */
 section.post-excerpt h3 {
   display: none;
 }
 
-/* line 154, ../sass/screen.scss */
+/* line 151, ../sass/screen.scss */
 a.mixed {
   text-decoration: none;
 }
-/* line 156, ../sass/screen.scss */
+/* line 153, ../sass/screen.scss */
 a.mixed span.mark {
   text-decoration: none;
 }
-/* line 159, ../sass/screen.scss */
+/* line 156, ../sass/screen.scss */
 a.mixed span.no_mark {
   text-decoration: underline;
 }
 
-/* line 164, ../sass/screen.scss */
+/* line 161, ../sass/screen.scss */
 article > * {
   margin-left: auto;
   margin-right: auto;
@@ -222,12 +227,12 @@ article > * {
   max-width: 100%;
 }
 
-/* line 168, ../sass/screen.scss */
+/* line 165, ../sass/screen.scss */
 article > .wide {
   width: 100%;
 }
 
-/* line 172, ../sass/screen.scss */
+/* line 169, ../sass/screen.scss */
 article {
   padding-top: 32px;
   font-family: "Lora", Georgia, Serif;
@@ -235,7 +240,7 @@ article {
   color: rgba(0, 0, 0, 0.8);
   line-height: 1.5em;
 }
-/* line 176, ../sass/screen.scss */
+/* line 173, ../sass/screen.scss */
 article div.post-meta {
   font-family: "Source Code Pro";
   font-weight: 300;
@@ -295,7 +300,7 @@ article div.post-meta li + li::before {
   color: #FF9100;
   content: "* ";
 }
-/* line 186, ../sass/screen.scss */
+/* line 183, ../sass/screen.scss */
 article h1 {
   font-family: "Source Code Pro";
   font-weight: 300;
@@ -331,15 +336,15 @@ article h1 a:hover {
 article h1 a:active {
   color: #FF9100;
 }
-/* line 188, ../sass/screen.scss */
+/* line 185, ../sass/screen.scss */
 article h1 a {
   text-decoration: none;
 }
-/* line 192, ../sass/screen.scss */
+/* line 189, ../sass/screen.scss */
 article h1.tag-name {
   margin-bottom: 8px;
 }
-/* line 196, ../sass/screen.scss */
+/* line 193, ../sass/screen.scss */
 article h2 {
   font-family: "Source Code Pro";
   font-weight: 300;
@@ -376,11 +381,11 @@ article h2 a:hover {
 article h2 a:active {
   color: #FF9100;
 }
-/* line 200, ../sass/screen.scss */
+/* line 197, ../sass/screen.scss */
 article h2 a::after {
   content: " ☛";
 }
-/* line 205, ../sass/screen.scss */
+/* line 202, ../sass/screen.scss */
 article h3 {
   font-family: "Source Code Pro";
   font-weight: 300;
@@ -417,7 +422,7 @@ article h3 a:hover {
 article h3 a:active {
   color: #FF9100;
 }
-/* line 209, ../sass/screen.scss */
+/* line 206, ../sass/screen.scss */
 article h3 a::after {
   content: " ☛";
 }
@@ -445,25 +450,25 @@ article a:hover {
 article a:active {
   color: #FF9100;
 }
-/* line 220, ../sass/screen.scss */
+/* line 217, ../sass/screen.scss */
 article em {
   font-style: italic;
 }
-/* line 224, ../sass/screen.scss */
+/* line 221, ../sass/screen.scss */
 article strong {
   font-style: bold;
 }
-/* line 228, ../sass/screen.scss */
+/* line 225, ../sass/screen.scss */
 article sup {
   font-size: 0.8em;
   vertical-align: super;
   line-height: 0;
 }
-/* line 234, ../sass/screen.scss */
+/* line 231, ../sass/screen.scss */
 article p {
   margin-bottom: 0.8em;
 }
-/* line 237, ../sass/screen.scss */
+/* line 234, ../sass/screen.scss */
 article p img {
   max-width: 100%;
   width: auto;
@@ -475,21 +480,21 @@ article p img {
   margin-bottom: 1.6em;
   border-radius: 4px;
 }
-/* line 250, ../sass/screen.scss */
+/* line 247, ../sass/screen.scss */
 article p.crop {
   overflow: hidden;
   height: 120px;
   border-radius: 4px;
   margin-bottom: 0.4em;
 }
-/* line 255, ../sass/screen.scss */
+/* line 252, ../sass/screen.scss */
 article p.crop img.header_image {
   margin-top: -40%;
   margin-bottom: 0.4em;
   width: 100%;
   max-height: 100000px;
 }
-/* line 263, ../sass/screen.scss */
+/* line 260, ../sass/screen.scss */
 article .videoWrapper {
   position: relative;
   padding-bottom: 56.25%;
@@ -501,7 +506,7 @@ article .videoWrapper {
   border-radius: 4px;
   overflow: hidden;
 }
-/* line 268, ../sass/screen.scss */
+/* line 265, ../sass/screen.scss */
 article .videoWrapper iframe {
   position: absolute;
   top: 0;
@@ -509,27 +514,32 @@ article .videoWrapper iframe {
   width: 100%;
   height: 100%;
 }
-/* line 281, ../sass/screen.scss */
+/* line 278, ../sass/screen.scss */
 article code {
   font-family: "Source Code Pro";
   font-weight: 300;
   line-height: 1.2;
 }
-/* line 286, ../sass/screen.scss */
+/* line 283, ../sass/screen.scss */
 article pre {
-  padding: 8px 0px 8px 0px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 608px;
+  max-width: 100%;
+  padding: 8px 16px 8px 16px;
   background-color: rgba(0, 0, 0, 0.8);
   margin-top: 1.6em;
   margin-bottom: 1.6em;
   border-radius: 4px;
+  overflow: scroll;
 }
-/* line 292, ../sass/screen.scss */
+/* line 291, ../sass/screen.scss */
 article pre code {
-  padding: 0px 16px 0px 16px;
   color: rgba(255, 255, 255, 0.8);
-  font-size: 16px;
+  font-size: 14px;
+  line-height: 1.0em;
 }
-/* line 299, ../sass/screen.scss */
+/* line 298, ../sass/screen.scss */
 article blockquote {
   margin-top: 1.6em;
   margin-bottom: 1.6em;
@@ -538,93 +548,93 @@ article blockquote {
   padding-right: 1.2em;
   padding-left: 0.8em;
 }
-/* line 308, ../sass/screen.scss */
+/* line 307, ../sass/screen.scss */
 article blockquote p::before {
   content: "“";
 }
-/* line 311, ../sass/screen.scss */
+/* line 310, ../sass/screen.scss */
 article blockquote p::after {
   content: "”";
 }
-/* line 316, ../sass/screen.scss */
+/* line 315, ../sass/screen.scss */
 article ul {
   margin-bottom: 0.8em;
 }
-/* line 318, ../sass/screen.scss */
+/* line 317, ../sass/screen.scss */
 article ul li {
   padding-left: 1.2em;
   text-indent: -1.2em;
 }
-/* line 322, ../sass/screen.scss */
+/* line 321, ../sass/screen.scss */
 article ul li::before {
   content: "* ";
   font-family: "Source Code Pro";
   font-weight: 300;
   color: #00796B;
 }
-/* line 328, ../sass/screen.scss */
+/* line 327, ../sass/screen.scss */
 article ul ul {
   margin-bottom: 0px;
 }
-/* line 329, ../sass/screen.scss */
+/* line 328, ../sass/screen.scss */
 article ul ul li::before {
   color: #FF9100;
 }
-/* line 334, ../sass/screen.scss */
+/* line 333, ../sass/screen.scss */
 article ul ul ul li::before {
   color: rgba(0, 0, 0, 0.8);
 }
-/* line 341, ../sass/screen.scss */
+/* line 340, ../sass/screen.scss */
 article ol {
   margin-bottom: 0.8em;
   list-style: none;
 }
-/* line 344, ../sass/screen.scss */
+/* line 343, ../sass/screen.scss */
 article ol li {
   counter-increment: step-counter;
   padding-left: 1.2em;
   text-indent: -1.2em;
 }
-/* line 349, ../sass/screen.scss */
+/* line 348, ../sass/screen.scss */
 article ol li::before {
   content: counter(step-counter) ".";
   font-family: "Source Code Pro";
   font-weight: 300;
   color: #00796B;
 }
-/* line 355, ../sass/screen.scss */
+/* line 354, ../sass/screen.scss */
 article ol li.footnote {
   padding-left: 1em;
   padding-right: 1em;
   margin-bottom: 0.6em;
 }
-/* line 359, ../sass/screen.scss */
+/* line 358, ../sass/screen.scss */
 article ol li.footnote p {
   display: inline;
 }
-/* line 363, ../sass/screen.scss */
+/* line 362, ../sass/screen.scss */
 article ol ol {
   margin-bottom: 0px;
 }
-/* line 365, ../sass/screen.scss */
+/* line 364, ../sass/screen.scss */
 article ol ol li {
   counter-increment: step-counter2;
 }
-/* line 368, ../sass/screen.scss */
+/* line 367, ../sass/screen.scss */
 article ol ol li::before {
   content: counter(step-counter2) ".";
   color: #FF9100;
 }
-/* line 373, ../sass/screen.scss */
+/* line 372, ../sass/screen.scss */
 article ol ol ol li {
   counter-increment: step-counter3;
 }
-/* line 376, ../sass/screen.scss */
+/* line 375, ../sass/screen.scss */
 article ol ol ol li::before {
   content: counter(step-counter3) ".";
   color: rgba(0, 0, 0, 0.8);
 }
-/* line 384, ../sass/screen.scss */
+/* line 383, ../sass/screen.scss */
 article section.share {
   text-align: left;
   font-family: "Source Code Pro";
@@ -660,19 +670,19 @@ article section.share a:hover {
 article section.share a:active {
   color: #FF9100;
 }
-/* line 387, ../sass/screen.scss */
+/* line 386, ../sass/screen.scss */
 article section.share a {
   text-decoration: none;
 }
-/* line 392, ../sass/screen.scss */
+/* line 391, ../sass/screen.scss */
 article section.share span a span.short {
   display: none;
 }
-/* line 397, ../sass/screen.scss */
+/* line 396, ../sass/screen.scss */
 article section.share span::before {
   content: " ";
 }
-/* line 400, ../sass/screen.scss */
+/* line 399, ../sass/screen.scss */
 article section.share span + span::before {
   content: " " "* ";
 }
@@ -773,12 +783,12 @@ article section.share span.reddit a:active {
   color: rgba(0, 0, 0, 0.8);
 }
 
-/* line 418, ../sass/screen.scss */
+/* line 417, ../sass/screen.scss */
 .pagination {
   margin-top: 32px;
   margin-bottom: 32px;
 }
-/* line 421, ../sass/screen.scss */
+/* line 420, ../sass/screen.scss */
 .pagination .newer-posts {
   float: left;
   font-family: "Source Code Pro";
@@ -821,7 +831,7 @@ article section.share span.reddit a:active {
 .pagination .newer-posts a {
   text-decoration: none;
 }
-/* line 425, ../sass/screen.scss */
+/* line 424, ../sass/screen.scss */
 .pagination .page-number {
   font-family: "Source Code Pro";
   font-weight: 300;
@@ -859,7 +869,7 @@ article section.share span.reddit a:active {
 .pagination .page-number a:active {
   color: #FF9100;
 }
-/* line 431, ../sass/screen.scss */
+/* line 430, ../sass/screen.scss */
 .pagination .older-posts {
   float: right;
   font-family: "Source Code Pro";
@@ -903,12 +913,12 @@ article section.share span.reddit a:active {
   text-decoration: none;
 }
 
-/* line 437, ../sass/screen.scss */
+/* line 436, ../sass/screen.scss */
 footer {
   text-align: center;
   margin-top: 32px;
 }
-/* line 440, ../sass/screen.scss */
+/* line 439, ../sass/screen.scss */
 footer section {
   display: inline;
   font-family: "Source Code Pro";
@@ -946,7 +956,7 @@ footer section a:active {
 }
 
 @media only screen and (max-width: 984px) {
-  /* line 448, ../sass/screen.scss */
+  /* line 447, ../sass/screen.scss */
   body {
     margin-left: 12px;
     margin-right: 12px;
@@ -955,94 +965,94 @@ footer section a:active {
   }
 }
 @media only screen and (max-width: 664px) {
-  /* line 454, ../sass/screen.scss */
+  /* line 453, ../sass/screen.scss */
   header#site-head {
     text-align: center;
   }
 }
 @media only screen and (max-width: 600px) {
-  /* line 461, ../sass/screen.scss */
+  /* line 460, ../sass/screen.scss */
   header#site-head h1 {
     font-size: 46px;
   }
-  /* line 464, ../sass/screen.scss */
+  /* line 463, ../sass/screen.scss */
   header#site-head nav {
     font-size: 16px;
   }
 
-  /* line 468, ../sass/screen.scss */
+  /* line 467, ../sass/screen.scss */
   article {
     font-size: 16px;
   }
-  /* line 469, ../sass/screen.scss */
+  /* line 468, ../sass/screen.scss */
   article h1 {
     font-size: 22px;
   }
-  /* line 472, ../sass/screen.scss */
+  /* line 471, ../sass/screen.scss */
   article h2 {
     font-size: 18px;
   }
-  /* line 475, ../sass/screen.scss */
+  /* line 474, ../sass/screen.scss */
   article h3 {
     font-size: 16px;
   }
-  /* line 479, ../sass/screen.scss */
+  /* line 478, ../sass/screen.scss */
   article p.crop {
     height: 100px;
   }
-  /* line 482, ../sass/screen.scss */
+  /* line 481, ../sass/screen.scss */
   article section.share {
     font-size: 16px;
   }
-  /* line 484, ../sass/screen.scss */
+  /* line 483, ../sass/screen.scss */
   article section.share span + span::before {
     content: " ";
   }
 
-  /* line 490, ../sass/screen.scss */
+  /* line 489, ../sass/screen.scss */
   .pagination .newer-posts {
     font-size: 20px;
   }
-  /* line 493, ../sass/screen.scss */
+  /* line 492, ../sass/screen.scss */
   .pagination .page-number {
     font-size: 20px;
   }
-  /* line 496, ../sass/screen.scss */
+  /* line 495, ../sass/screen.scss */
   .pagination .older-posts {
     font-size: 20px;
   }
 }
 @media only screen and (max-width: 420px) {
-  /* line 504, ../sass/screen.scss */
+  /* line 503, ../sass/screen.scss */
   header#site-head h1 {
     font-size: 36px;
   }
-  /* line 507, ../sass/screen.scss */
+  /* line 506, ../sass/screen.scss */
   header#site-head nav {
     font-size: 14px;
   }
 
-  /* line 511, ../sass/screen.scss */
+  /* line 510, ../sass/screen.scss */
   article {
     font-size: 14px;
   }
-  /* line 512, ../sass/screen.scss */
+  /* line 511, ../sass/screen.scss */
   article h1 {
     font-size: 20px;
   }
-  /* line 515, ../sass/screen.scss */
+  /* line 514, ../sass/screen.scss */
   article h2 {
     font-size: 16px;
   }
-  /* line 518, ../sass/screen.scss */
+  /* line 517, ../sass/screen.scss */
   article h3 {
     font-size: 14px;
   }
-  /* line 522, ../sass/screen.scss */
+  /* line 521, ../sass/screen.scss */
   article p.crop {
     height: 80px;
   }
-  /* line 525, ../sass/screen.scss */
+  /* line 524, ../sass/screen.scss */
   article section.share {
     font-size: 14px;
   }

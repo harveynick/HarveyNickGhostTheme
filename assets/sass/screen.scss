@@ -113,10 +113,7 @@ header#site-head {
 	padding-bottom: 8px;
 
 	h1 {
-		font-family: "Source Code Pro";
-		font-weight: 200;
-		font-size: 58px;
-		@include link-colours($light-colour, $accent-colour);
+		@include title-font(58px, $light-colour, $accent-colour);
 		a {
 			text-decoration: none;
 			em {
@@ -284,15 +281,17 @@ article {
 		line-height: 1.2;
 	}
 	pre {
-		padding: 8px 0px 8px 0px;
+		@include central($trunk-width - 32px);
+		padding: 8px 16px 8px 16px;
 		background-color:$text-colour;
 		margin-top: $paragraph-padding * 2;
 		margin-bottom: $paragraph-padding * 2;
 		border-radius: 4px;
+		overflow: scroll;
 		code {
-			padding: 0px 16px 0px 16px;
 			color: $light-text-colour;
-			font-size: 16px;
+			font-size: 14px;
+			line-height: 1.0em;
 		}
 	}
 
