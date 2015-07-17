@@ -438,18 +438,7 @@ article {
 
 footer {
 	text-align: center;
-	margin-top: 24px;
-
-	div#adsense-bottom-of-page {
-		@include central(970px);
-		height: 90px;
-		background-color: blue;
-
-		margin-bottom: 16px;
-		overflow: hidden;
-		border-radius: 4px;
-	}
-
+	margin-top: 32px;
 	section {
 		display: inline;
 		@include title-font(12px, $text-colour, $accent-colour);
@@ -561,22 +550,13 @@ footer {
 
 footer {
 	div#adsense-bottom-of-page {
-		@include central(970px);
+		@include central(728px);
 		height: 90px;
-		background-color: $text-colour;
-
 		margin-bottom: 16px;
 		overflow: hidden;
 		border-radius: 4px;
-	}
-}
-
-@media only screen and (max-width: 970px + ($side-padding * 2)) {
-	footer {
-		div#adsense-bottom-of-page {
-			width: 728px;
-			height: 90px;
-		}
+		background-color: $text-colour;
+		padding: 8px 4px 8px 4px;
 	}
 }
 
@@ -594,6 +574,7 @@ footer {
 		div#adsense-bottom-of-page {
 			width: 320px;
 			height: 100px;
+			padding: 0px 0px 0px 0px;
 		}
 	}
 }
@@ -603,6 +584,7 @@ footer {
 		div#adsense-bottom-of-page {
 			width: 234px;
 			height: 60px;
+			padding: 8px 4px 8px 4px;
 		}
 	}
 }
