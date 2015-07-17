@@ -795,9 +795,7 @@ article section.share span.reddit a:active {
   font-weight: 300;
   font-size: 24px;
   color: rgba(0, 0, 0, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.2);
   padding: 2px 4px 2px 4px;
-  border-radius: 4px;
 }
 /* line 87, ../sass/screen.scss */
 .pagination .newer-posts a {
@@ -876,9 +874,7 @@ article section.share span.reddit a:active {
   font-weight: 300;
   font-size: 24px;
   color: rgba(0, 0, 0, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.2);
   padding: 2px 4px 2px 4px;
-  border-radius: 4px;
 }
 /* line 87, ../sass/screen.scss */
 .pagination .older-posts a {
@@ -912,13 +908,29 @@ article section.share span.reddit a:active {
 .pagination .older-posts a {
   text-decoration: none;
 }
+/* line 434, ../sass/screen.scss */
+.pagination .hidden {
+  color: white;
+}
 
-/* line 436, ../sass/screen.scss */
+/* line 439, ../sass/screen.scss */
 footer {
   text-align: center;
-  margin-top: 32px;
+  margin-top: 24px;
 }
-/* line 439, ../sass/screen.scss */
+/* line 443, ../sass/screen.scss */
+footer div#adsense-bottom-of-page {
+  margin-left: auto;
+  margin-right: auto;
+  width: 970px;
+  max-width: 100%;
+  height: 90px;
+  background-color: blue;
+  margin-bottom: 16px;
+  overflow: hidden;
+  border-radius: 4px;
+}
+/* line 453, ../sass/screen.scss */
 footer section {
   display: inline;
   font-family: "Source Code Pro";
@@ -956,7 +968,7 @@ footer section a:active {
 }
 
 @media only screen and (max-width: 984px) {
-  /* line 447, ../sass/screen.scss */
+  /* line 461, ../sass/screen.scss */
   body {
     margin-left: 12px;
     margin-right: 12px;
@@ -965,95 +977,153 @@ footer section a:active {
   }
 }
 @media only screen and (max-width: 664px) {
-  /* line 453, ../sass/screen.scss */
+  /* line 467, ../sass/screen.scss */
   header#site-head {
     text-align: center;
   }
 }
 @media only screen and (max-width: 600px) {
-  /* line 460, ../sass/screen.scss */
+  /* line 474, ../sass/screen.scss */
   header#site-head h1 {
     font-size: 46px;
   }
-  /* line 463, ../sass/screen.scss */
+  /* line 477, ../sass/screen.scss */
   header#site-head nav {
     font-size: 16px;
   }
 
-  /* line 467, ../sass/screen.scss */
+  /* line 481, ../sass/screen.scss */
   article {
     font-size: 16px;
   }
-  /* line 468, ../sass/screen.scss */
+  /* line 482, ../sass/screen.scss */
   article h1 {
     font-size: 22px;
   }
-  /* line 471, ../sass/screen.scss */
+  /* line 485, ../sass/screen.scss */
   article h2 {
     font-size: 18px;
   }
-  /* line 474, ../sass/screen.scss */
+  /* line 488, ../sass/screen.scss */
   article h3 {
     font-size: 16px;
   }
-  /* line 478, ../sass/screen.scss */
+  /* line 492, ../sass/screen.scss */
   article p.crop {
     height: 100px;
   }
-  /* line 481, ../sass/screen.scss */
+  /* line 496, ../sass/screen.scss */
+  article pre code {
+    font-size: 12px;
+  }
+  /* line 500, ../sass/screen.scss */
   article section.share {
     font-size: 16px;
   }
-  /* line 483, ../sass/screen.scss */
+  /* line 502, ../sass/screen.scss */
   article section.share span + span::before {
     content: " ";
   }
 
-  /* line 489, ../sass/screen.scss */
+  /* line 508, ../sass/screen.scss */
   .pagination .newer-posts {
     font-size: 20px;
   }
-  /* line 492, ../sass/screen.scss */
+  /* line 511, ../sass/screen.scss */
   .pagination .page-number {
     font-size: 20px;
   }
-  /* line 495, ../sass/screen.scss */
+  /* line 514, ../sass/screen.scss */
   .pagination .older-posts {
     font-size: 20px;
   }
 }
 @media only screen and (max-width: 420px) {
-  /* line 503, ../sass/screen.scss */
+  /* line 522, ../sass/screen.scss */
   header#site-head h1 {
     font-size: 36px;
   }
-  /* line 506, ../sass/screen.scss */
+  /* line 525, ../sass/screen.scss */
   header#site-head nav {
     font-size: 14px;
   }
 
-  /* line 510, ../sass/screen.scss */
+  /* line 529, ../sass/screen.scss */
   article {
     font-size: 14px;
   }
-  /* line 511, ../sass/screen.scss */
+  /* line 530, ../sass/screen.scss */
   article h1 {
     font-size: 20px;
   }
-  /* line 514, ../sass/screen.scss */
+  /* line 533, ../sass/screen.scss */
   article h2 {
     font-size: 16px;
   }
-  /* line 517, ../sass/screen.scss */
+  /* line 536, ../sass/screen.scss */
   article h3 {
     font-size: 14px;
   }
-  /* line 521, ../sass/screen.scss */
+  /* line 540, ../sass/screen.scss */
   article p.crop {
     height: 80px;
   }
-  /* line 524, ../sass/screen.scss */
+  /* line 543, ../sass/screen.scss */
   article section.share {
     font-size: 14px;
+  }
+
+  /* line 548, ../sass/screen.scss */
+  .pagination .newer-posts {
+    font-size: 16px;
+  }
+  /* line 551, ../sass/screen.scss */
+  .pagination .page-number {
+    font-size: 16px;
+  }
+  /* line 554, ../sass/screen.scss */
+  .pagination .older-posts {
+    font-size: 16px;
+  }
+}
+/* line 563, ../sass/screen.scss */
+footer div#adsense-bottom-of-page {
+  margin-left: auto;
+  margin-right: auto;
+  width: 970px;
+  max-width: 100%;
+  height: 90px;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 16px;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+@media only screen and (max-width: 994px) {
+  /* line 576, ../sass/screen.scss */
+  footer div#adsense-bottom-of-page {
+    width: 728px;
+    height: 90px;
+  }
+}
+@media only screen and (max-width: 752px) {
+  /* line 585, ../sass/screen.scss */
+  footer div#adsense-bottom-of-page {
+    width: 468px;
+    height: 60px;
+  }
+}
+@media only screen and (max-width: 492px) {
+  /* line 594, ../sass/screen.scss */
+  footer div#adsense-bottom-of-page {
+    width: 320px;
+    height: 100px;
+  }
+}
+@media only screen and (max-width: 344px) {
+  /* line 603, ../sass/screen.scss */
+  footer div#adsense-bottom-of-page {
+    width: 234px;
+    height: 60px;
   }
 }

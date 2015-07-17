@@ -1,7 +1,15 @@
 {{!< default}}
 
 <nav class="pagination bounding">
-    {{#if prev}}<div class="newer-posts"><a href="{{page_url prev}}">Last</a></div>{{/if}}
-    {{#if next}}<div class="older-posts"><a href="{{page_url next}}">Next</a></div>{{/if}}
+    {{#if prev}}
+    	<div class="newer-posts"><a href="{{page_url prev}}">☚ Last</a></div>
+    {{else}}
+    	<div class="newer-posts hidden">☚ Last</div>
+    {{/if}}
+    {{#if next}}
+    	<div class="older-posts"><a href="{{page_url next}}">Next ☛</a></div>
+    {{else}}
+    	<div class="older-posts hidden">Next ☛</div>
+    {{/if}}
     <div class="page-number">Page {{page}} of {{pages}}</div>
 </nav>
