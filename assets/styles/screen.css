@@ -238,7 +238,7 @@ article {
   font-family: "Lora", Georgia, Serif;
   font-size: 18px;
   color: rgba(0, 0, 0, 0.8);
-  line-height: 1.5em;
+  line-height: 1.45em;
 }
 /* line 173, ../sass/screen.scss */
 article div.post-meta {
@@ -483,16 +483,16 @@ article p img {
 /* line 247, ../sass/screen.scss */
 article p.crop {
   overflow: hidden;
-  height: 120px;
   border-radius: 4px;
   margin-bottom: 0.4em;
 }
-/* line 252, ../sass/screen.scss */
+/* line 251, ../sass/screen.scss */
 article p.crop img.header_image {
-  margin-top: -40%;
-  margin-bottom: 0.4em;
   width: 100%;
-  max-height: 100000px;
+  height: 100%;
+  max-height: 120px;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
 }
 /* line 260, ../sass/screen.scss */
 article .videoWrapper {
@@ -543,98 +543,92 @@ article pre code {
 article blockquote {
   margin-top: 1.6em;
   margin-bottom: 1.6em;
+}
+/* line 301, ../sass/screen.scss */
+article blockquote P {
   font-style: italic;
   border-left: 0.4em solid #4DB6AC;
-  padding-right: 1.2em;
   padding-left: 0.8em;
 }
-/* line 307, ../sass/screen.scss */
-article blockquote p::before {
-  content: "“";
-}
-/* line 310, ../sass/screen.scss */
-article blockquote p::after {
-  content: "”";
-}
-/* line 315, ../sass/screen.scss */
+/* line 308, ../sass/screen.scss */
 article ul {
   margin-bottom: 0.8em;
 }
-/* line 317, ../sass/screen.scss */
+/* line 310, ../sass/screen.scss */
 article ul li {
   padding-left: 1.2em;
   text-indent: -1.2em;
 }
-/* line 321, ../sass/screen.scss */
+/* line 314, ../sass/screen.scss */
 article ul li::before {
   content: "* ";
   font-family: "Source Code Pro";
   font-weight: 300;
   color: #00796B;
 }
-/* line 327, ../sass/screen.scss */
+/* line 320, ../sass/screen.scss */
 article ul ul {
   margin-bottom: 0px;
 }
-/* line 328, ../sass/screen.scss */
+/* line 321, ../sass/screen.scss */
 article ul ul li::before {
   color: #FF9100;
 }
-/* line 333, ../sass/screen.scss */
+/* line 326, ../sass/screen.scss */
 article ul ul ul li::before {
   color: rgba(0, 0, 0, 0.8);
 }
-/* line 340, ../sass/screen.scss */
+/* line 333, ../sass/screen.scss */
 article ol {
   margin-bottom: 0.8em;
   list-style: none;
 }
-/* line 343, ../sass/screen.scss */
+/* line 336, ../sass/screen.scss */
 article ol li {
   counter-increment: step-counter;
   padding-left: 1.2em;
   text-indent: -1.2em;
 }
-/* line 348, ../sass/screen.scss */
+/* line 341, ../sass/screen.scss */
 article ol li::before {
   content: counter(step-counter) ".";
   font-family: "Source Code Pro";
   font-weight: 300;
   color: #00796B;
 }
-/* line 354, ../sass/screen.scss */
+/* line 347, ../sass/screen.scss */
 article ol li.footnote {
   padding-left: 1em;
   padding-right: 1em;
   margin-bottom: 0.6em;
 }
-/* line 358, ../sass/screen.scss */
+/* line 351, ../sass/screen.scss */
 article ol li.footnote p {
   display: inline;
 }
-/* line 362, ../sass/screen.scss */
+/* line 355, ../sass/screen.scss */
 article ol ol {
   margin-bottom: 0px;
 }
-/* line 364, ../sass/screen.scss */
+/* line 357, ../sass/screen.scss */
 article ol ol li {
   counter-increment: step-counter2;
 }
-/* line 367, ../sass/screen.scss */
+/* line 360, ../sass/screen.scss */
 article ol ol li::before {
   content: counter(step-counter2) ".";
   color: #FF9100;
 }
-/* line 372, ../sass/screen.scss */
+/* line 365, ../sass/screen.scss */
 article ol ol ol li {
   counter-increment: step-counter3;
 }
-/* line 375, ../sass/screen.scss */
+/* line 368, ../sass/screen.scss */
 article ol ol ol li::before {
   content: counter(step-counter3) ".";
   color: rgba(0, 0, 0, 0.8);
 }
-/* line 383, ../sass/screen.scss */
+/* line 376, ../sass/screen.scss */
 article section.share {
   text-align: left;
   font-family: "Source Code Pro";
@@ -670,19 +664,19 @@ article section.share a:hover {
 article section.share a:active {
   color: #FF9100;
 }
-/* line 386, ../sass/screen.scss */
+/* line 379, ../sass/screen.scss */
 article section.share a {
   text-decoration: none;
 }
-/* line 391, ../sass/screen.scss */
+/* line 384, ../sass/screen.scss */
 article section.share span a span.short {
   display: none;
 }
-/* line 396, ../sass/screen.scss */
+/* line 389, ../sass/screen.scss */
 article section.share span::before {
   content: " ";
 }
-/* line 399, ../sass/screen.scss */
+/* line 392, ../sass/screen.scss */
 article section.share span + span::before {
   content: " " "* ";
 }
@@ -783,12 +777,12 @@ article section.share span.reddit a:active {
   color: rgba(0, 0, 0, 0.8);
 }
 
-/* line 417, ../sass/screen.scss */
+/* line 410, ../sass/screen.scss */
 .pagination {
   margin-top: 32px;
   margin-bottom: 32px;
 }
-/* line 420, ../sass/screen.scss */
+/* line 413, ../sass/screen.scss */
 .pagination .newer-posts {
   float: left;
   font-family: "Source Code Pro";
@@ -829,7 +823,7 @@ article section.share span.reddit a:active {
 .pagination .newer-posts a {
   text-decoration: none;
 }
-/* line 424, ../sass/screen.scss */
+/* line 417, ../sass/screen.scss */
 .pagination .page-number {
   font-family: "Source Code Pro";
   font-weight: 300;
@@ -867,7 +861,7 @@ article section.share span.reddit a:active {
 .pagination .page-number a:active {
   color: #FF9100;
 }
-/* line 430, ../sass/screen.scss */
+/* line 423, ../sass/screen.scss */
 .pagination .older-posts {
   float: right;
   font-family: "Source Code Pro";
@@ -908,17 +902,17 @@ article section.share span.reddit a:active {
 .pagination .older-posts a {
   text-decoration: none;
 }
-/* line 434, ../sass/screen.scss */
+/* line 427, ../sass/screen.scss */
 .pagination .hidden {
   color: white;
 }
 
-/* line 439, ../sass/screen.scss */
+/* line 432, ../sass/screen.scss */
 footer {
   text-align: center;
   margin-top: 32px;
 }
-/* line 442, ../sass/screen.scss */
+/* line 435, ../sass/screen.scss */
 footer section {
   display: inline;
   font-family: "Source Code Pro";
@@ -956,7 +950,7 @@ footer section a:active {
 }
 
 @media only screen and (max-width: 984px) {
-  /* line 450, ../sass/screen.scss */
+  /* line 443, ../sass/screen.scss */
   body {
     margin-left: 12px;
     margin-right: 12px;
@@ -965,96 +959,89 @@ footer section a:active {
   }
 }
 @media only screen and (max-width: 664px) {
-  /* line 456, ../sass/screen.scss */
+  /* line 449, ../sass/screen.scss */
   header#site-head {
     text-align: center;
   }
 }
 @media only screen and (max-width: 600px) {
-  /* line 463, ../sass/screen.scss */
+  /* line 456, ../sass/screen.scss */
   header#site-head h1 {
     font-size: 46px;
   }
-  /* line 466, ../sass/screen.scss */
+  /* line 459, ../sass/screen.scss */
   header#site-head nav {
     font-size: 16px;
   }
 
-  /* line 470, ../sass/screen.scss */
+  /* line 463, ../sass/screen.scss */
   article {
+    padding-top: 16px;
     font-size: 16px;
   }
-  /* line 471, ../sass/screen.scss */
+  /* line 465, ../sass/screen.scss */
   article h1 {
     font-size: 22px;
   }
-  /* line 474, ../sass/screen.scss */
+  /* line 468, ../sass/screen.scss */
   article h2 {
     font-size: 18px;
   }
-  /* line 477, ../sass/screen.scss */
+  /* line 471, ../sass/screen.scss */
   article h3 {
     font-size: 16px;
   }
-  /* line 481, ../sass/screen.scss */
-  article p.crop {
-    height: 100px;
-  }
-  /* line 485, ../sass/screen.scss */
+  /* line 482, ../sass/screen.scss */
   article pre code {
     font-size: 12px;
   }
-  /* line 489, ../sass/screen.scss */
+  /* line 486, ../sass/screen.scss */
   article section.share {
     font-size: 16px;
   }
-  /* line 491, ../sass/screen.scss */
+  /* line 488, ../sass/screen.scss */
   article section.share span + span::before {
     content: " ";
   }
 
-  /* line 497, ../sass/screen.scss */
+  /* line 494, ../sass/screen.scss */
   .pagination .newer-posts {
     font-size: 20px;
   }
-  /* line 500, ../sass/screen.scss */
+  /* line 497, ../sass/screen.scss */
   .pagination .page-number {
     font-size: 20px;
   }
-  /* line 503, ../sass/screen.scss */
+  /* line 500, ../sass/screen.scss */
   .pagination .older-posts {
     font-size: 20px;
   }
 }
 @media only screen and (max-width: 420px) {
-  /* line 511, ../sass/screen.scss */
+  /* line 508, ../sass/screen.scss */
   header#site-head h1 {
     font-size: 36px;
   }
-  /* line 514, ../sass/screen.scss */
+  /* line 511, ../sass/screen.scss */
   header#site-head nav {
     font-size: 14px;
   }
 
-  /* line 518, ../sass/screen.scss */
+  /* line 515, ../sass/screen.scss */
   article {
     font-size: 14px;
   }
-  /* line 519, ../sass/screen.scss */
+  /* line 516, ../sass/screen.scss */
   article h1 {
     font-size: 20px;
   }
-  /* line 522, ../sass/screen.scss */
+  /* line 519, ../sass/screen.scss */
   article h2 {
     font-size: 16px;
   }
-  /* line 525, ../sass/screen.scss */
+  /* line 522, ../sass/screen.scss */
   article h3 {
     font-size: 14px;
-  }
-  /* line 529, ../sass/screen.scss */
-  article p.crop {
-    height: 80px;
   }
   /* line 532, ../sass/screen.scss */
   article section.share {

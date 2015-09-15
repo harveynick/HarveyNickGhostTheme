@@ -211,7 +211,7 @@ article {
 	font-family: "Lora", Georgia, Serif;
 	font-size: 18px;
 	color: $text-colour;
-	line-height: 1.5em;
+	line-height: 1.45em;
 	@include link-colours($text-colour, $accent-colour);
 
 	em {
@@ -246,14 +246,14 @@ article {
 	// The header image is cropped to a short and wide strip.
 	p.crop {
 		overflow: hidden;
-		height: 120px;
 		border-radius: 4px;
 		margin-bottom: $paragraph-padding / 2;
 		img.header_image {
-			margin-top: -40%;
-			margin-bottom: $paragraph-padding / 2;
 			width: 100%;
-			max-height: 100000px;
+			height: 100%;
+			max-height: 120px;
+			margin-top: $paragraph-padding / 4;
+			margin-bottom: $paragraph-padding / 4;
 		}
 	}
 
@@ -298,17 +298,10 @@ article {
 	blockquote {
 		margin-top: $paragraph-padding * 2;
 		margin-bottom: $paragraph-padding * 2;
-		font-style: italic;
-		border-left: 0.4em solid $light-colour;
-		padding-right: 1.2em;
-		padding-left: 0.8em;
 		P {
-		}
-		p::before {
-			content: "“"; 
-		}
-		p::after {
-			content: "”"; 
+			font-style: italic;
+			border-left: 0.4em solid $light-colour;
+			padding-left: 0.8em;
 		}
 	}
 
@@ -468,6 +461,7 @@ footer {
 		}
 	}
 	article {
+		padding-top: 16px;
 		h1 {
 			font-size: 22px;
 		}
@@ -478,9 +472,12 @@ footer {
 			font-size: 16px;
 		}
 		font-size: 16px;
-		p.crop {
-			height: 100px;
-		}
+//		p.crop {
+//			height: 100px;
+//			img.header_image {
+//				margin-top: -10px;
+//			}
+//		}
 		pre {
 			code {
 				font-size: 12px;
@@ -526,9 +523,12 @@ footer {
 			font-size: 14px;
 		}
 		font-size: 14px;
-		p.crop {
-			height: 80px;
-		}
+//		p.crop {
+//			height: 80px;
+//			img.header_image {
+//				margin-top: -20px;
+//			}
+//		}
 		section.share {
 			font-size: 14px;
 		}
