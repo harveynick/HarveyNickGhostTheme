@@ -81,7 +81,7 @@ $bullet-point: "* ";
 }
 
 @mixin title-font($size, $normal, $hover) {
-	font-family: "Source Code Pro";
+	font-family: "Source Code Pro", Mono;
 	font-weight: 300;
 	font-size: $size;
 	a { text-decoration: none; }
