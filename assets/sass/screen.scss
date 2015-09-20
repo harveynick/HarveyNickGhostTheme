@@ -298,10 +298,16 @@ article {
 	blockquote {
 		margin-top: $paragraph-padding * 2;
 		margin-bottom: $paragraph-padding * 2;
-		P {
+		p {
 			font-style: italic;
-			border-left: 0.4em solid $light-colour;
 			padding-left: 0.8em;
+			border-left: 0.4em solid $light-colour;
+			margin-bottom: 0;
+		}
+		P + p {
+			margin-top: 0;
+			margin-bottom: 0;
+			padding-top: $paragraph-padding;
 		}
 	}
 
