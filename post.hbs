@@ -4,6 +4,9 @@
 <article id="{{id}}" class="{{post_class}}" itemscope itemtype="http://schema.org/BlogPosting">
 	{{> article-header}}
 	{{> article-meta}}
+  {{#if image}}
+    <meta itemprop="image" content="{{image}}"></meta>
+  {{/if}}
 	{{{content}}}
 
 	<section class="share">
