@@ -25,8 +25,8 @@
         <![endif]-->
         
         {{!-- scripts --}}
-        <script type="text/javascript" src="{{asset '/scripts/jquery.js'}}"></script>
-        <script type="text/javascript" src="{{asset '/scripts/main.js'}}"></script>
+        {{!-- <script type="text/javascript" src="{{asset '/scripts/jquery.js'}}"></script> --}}
+        {{!-- <script type="text/javascript" src="{{asset '/scripts/main.js'}}"></script> --}}
 
         {{!-- ghost head --}}
         {{ghost_head}}
@@ -37,7 +37,7 @@
     
         {{!-- header --}}
         <header class="bounding" id="site-head">
-            <h1><a href="{{@blog.url}}">Harvey<em>Nick</em>.com</a></h1>
+            <h1><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
             <p>{{@blog.description}}</p>
             {{navigation}}
         </header>
