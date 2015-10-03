@@ -71,12 +71,15 @@ $bullet-point: "* ";
 		padding-left: 0em;
 		text-indent: 0em;
 	}
+	li + li {
+		padding-top: 0;
+	}
 	li::before {
 		content: ""; 
 	}
 	li + li::before {
 		color: $accent-colour;
-		content: $bullet-point; 
+		content: $bullet-point;
 	}
 }
 
@@ -301,6 +304,9 @@ article {
 			padding-left: 1.2em;
 			text-indent: -1.2em;
 		}
+		li + li {
+			padding-top: $paragraph-padding / 2;
+		}
 		li::before {
 			content: $bullet-point;
 			font-family: "Source Code Pro";
@@ -327,6 +333,9 @@ article {
 			counter-increment: step-counter;
 			padding-left: 1.2em;
 			text-indent: -1.2em;
+		}
+		li + li {
+			padding-top: $paragraph-padding / 2;
 		}
 		li::before {
 			content: counter(step-counter) ".";
