@@ -114,12 +114,7 @@ header#site-head {
 		@include title-font(58px, $light-colour, $accent-colour);
 		a {
 			text-decoration: none;
-			em {
-				color: $main-colour;
-			}
 		}
-
-
 		margin-bottom: 12px;
 
 	}
@@ -143,16 +138,6 @@ section.post-excerpt {
 	}
 	h3 {
 		display: none;
-	}
-}
-
-a.mixed {
-	text-decoration: none;
-	span.mark {
-		text-decoration: none;
-	}
-	span.no_mark {
-		text-decoration: underline;
 	}
 }
 
@@ -218,7 +203,7 @@ article {
 	}
 
 	strong {
-		font-style: bold;	
+		font-weight: 700;	
 	}
 
 	sup {
@@ -477,12 +462,6 @@ footer {
 			font-size: 16px;
 		}
 		font-size: 16px;
-//		p.crop {
-//			height: 100px;
-//			img.header_image {
-//				margin-top: -10px;
-//			}
-//		}
 		pre {
 			code {
 				font-size: 12px;
