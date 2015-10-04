@@ -100,44 +100,47 @@ $bullet-point: "* ";
 
 @font-face {
 	font-family: 'Source Code Pro';
-	src: url('../fonts/source_code_pro/source_code_pro-light.ttf') format('truetype');
+	src: url('../fonts/source_code_pro/source_code_pro-light.ttf.woff2') format('woff2'),
+		 url('../fonts/source_code_pro/source_code_pro-light.ttf.woff') format('woff'),
+		 url('../fonts/source_code_pro/source_code_pro-light.ttf') format('truetype');
 	font-weight: 300;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Lora';
-	src: url('../fonts/lora/lora-regular.ttf') format('truetype');
+	src: url('../fonts/lora/lora-regular.woff2') format('woff2'),
+		 url('../fonts/lora/lora-regular.woff') format('woff'),
+		 url('../fonts/lora/lora-regular.ttf') format('truetype');
 	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Lora';
-	src: url('../fonts/lora/lora-bold.ttf') format('truetype');
+	src: url('../fonts/lora/lora-bold.woff2') format('woff2'),
+		 url('../fonts/lora/lora-bold.woff') format('woff'),
+		 url('../fonts/lora/lora-bold.ttf') format('truetype');
 	font-weight: 700;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Lora';
-	src: url('../fonts/lora/lora-italic.ttf') format('truetype');
+	src: url('../fonts/lora/lora-italic.woff2') format('woff2'),
+		 url('../fonts/lora/lora-italic.woff') format('woff'),
+		 url('../fonts/lora/lora-italic.ttf') format('truetype');
 	font-weight: 400;
 	font-style: italic;
 }
 
-article {
-	font-family: "Lora", Georgia, serif;
-}
-
-article {
-	em {
-		font-style: italic;
-	}
-
-	strong {
-		font-weight: 700;	
-	}
+@font-face {
+	font-family: 'Lora';
+	src: url('../fonts/lora/lora-bold_italic.woff2') format('woff2'),
+		 url('../fonts/lora/lora-bold_italic.woff') format('woff'),
+		 url('../fonts/lora/lora-bold_italic.ttf') format('truetype');
+	font-weight: 700;
+	font-style: italic;
 }
 
 body {
@@ -237,11 +240,19 @@ article {
 		}
 	}
 
-//	font-family: "Lora", Georgia, serif;
+	font-family: "Lora", Georgia, serif;
 	font-size: 18px;
 	color: $text-colour;
 	line-height: 1.45em;
 	@include link-colours($text-colour, $accent-colour);
+
+	em {
+		font-style: italic;
+	}
+
+	strong {
+		font-weight: 700;	
+	}
 
 	sup {
 		font-size: 0.8em;
