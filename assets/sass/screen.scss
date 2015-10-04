@@ -98,6 +98,42 @@ $bullet-point: "* ";
 	padding: 2px 4px 2px 4px;
 }
 
+@font-face {
+	font-family: 'Source Code Pro';
+	src: url('../fonts/source_code_pro/source_code_pro-light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lora';
+	src: url('../fonts/lora/lora-regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lora';
+	src: url('../fonts/lora/lora-bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lora';
+	src: url('../fonts/lora/lora-italic.ttf') format('truetype');
+	font-weight: 400;
+	font-style: italic;
+}
+
+article {
+	font-family: Georgia, serif;
+}
+
+.fonts-loaded article {
+	font-family: "Lora", Georgia, serif;
+}
+
 body {
 	margin-top: 8px;
 	margin-bottom: 8px;
@@ -195,7 +231,7 @@ article {
 		}
 	}
 
-	font-family: "Lora", Georgia, Serif;
+//	font-family: "Lora", Georgia, serif;
 	font-size: 18px;
 	color: $text-colour;
 	line-height: 1.45em;
