@@ -127,11 +127,17 @@ $bullet-point: "* ";
 }
 
 article {
-	font-family: Georgia, serif;
+	font-family: "Lora", Georgia, serif;
 }
 
 .fonts-loaded article {
-	font-family: "Lora", Georgia, serif;
+	em {
+		font-style: italic;
+	}
+
+	strong {
+		font-weight: 700;	
+	}
 }
 
 body {
@@ -236,14 +242,6 @@ article {
 	color: $text-colour;
 	line-height: 1.45em;
 	@include link-colours($text-colour, $accent-colour);
-
-	em {
-		font-style: italic;
-	}
-
-	strong {
-		font-weight: 700;	
-	}
 
 	sup {
 		font-size: 0.8em;
