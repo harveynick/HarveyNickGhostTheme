@@ -308,12 +308,12 @@ article {
 	}
 
 	code {
-		font-family: "Source Code Pro";
+		font-family: "Source Code Pro", Mono;
 		font-weight: 300;
 		line-height: 1.2;
 	}
 	pre {
-		@include central($trunk-width - 32px);
+		@include central($trunk-width - 32);
 		padding: 8px 16px 8px 16px;
 		background-color:$text-colour;
 		margin-top: $paragraph-padding * 2;
@@ -415,6 +415,13 @@ article {
 				}
 			}
 		}
+	}
+
+	div.footnotes {
+		border-top: 1px solid $dark-colour;
+		padding-top: $paragraph-padding;
+		padding-bottom: $paragraph-padding;
+		font-size: 16px;
 	}
 
 	section.share {
@@ -521,6 +528,9 @@ footer {
 				font-size: 12px;
 			}
 		}
+		div.footnotes {
+			font-size: 14px;
+		}
 		section.share {
 			font-size: 16px;
 			span + span::before {
@@ -561,6 +571,9 @@ footer {
 			font-size: 14px;
 		}
 		font-size: 14px;
+		div.footnotes {
+			font-size: 12px;
+		}
 		section.share {
 			font-size: 14px;
 		}

@@ -92,7 +92,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-weight: 400;
   font-style: italic;
 }
-/* line 137, ../sass/screen.scss */
+@font-face {
+  font-family: 'Lora';
+  src: url("../fonts/lora/lora-bold_italic.woff2") format("woff2"), url("../fonts/lora/lora-bold_italic.woff") format("woff"), url("../fonts/lora/lora-bold_italic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+/* line 146, ../sass/screen.scss */
 body {
   margin-top: 8px;
   margin-bottom: 8px;
@@ -102,17 +108,17 @@ body {
   max-width: 100%;
 }
 
-/* line 143, ../sass/screen.scss */
+/* line 152, ../sass/screen.scss */
 .bounding {
   width: 100%;
 }
 
-/* line 147, ../sass/screen.scss */
+/* line 156, ../sass/screen.scss */
 header#site-head {
   text-align: left;
   padding-bottom: 8px;
 }
-/* line 152, ../sass/screen.scss */
+/* line 161, ../sass/screen.scss */
 header#site-head h1 {
   font-family: "Source Code Pro", Mono;
   font-weight: 300;
@@ -148,15 +154,15 @@ header#site-head h1 a:hover {
 header#site-head h1 a:active {
   color: #FF9100;
 }
-/* line 154, ../sass/screen.scss */
+/* line 163, ../sass/screen.scss */
 header#site-head h1 a {
   text-decoration: none;
 }
-/* line 160, ../sass/screen.scss */
+/* line 169, ../sass/screen.scss */
 header#site-head p {
   display: none;
 }
-/* line 163, ../sass/screen.scss */
+/* line 172, ../sass/screen.scss */
 header#site-head nav {
   font-family: "Source Code Pro", Mono;
   font-weight: 300;
@@ -217,20 +223,20 @@ header#site-head nav li + li::before {
   content: "* ";
 }
 
-/* line 172, ../sass/screen.scss */
+/* line 181, ../sass/screen.scss */
 section.post-excerpt p:not(:first-child) {
   display: none;
 }
-/* line 175, ../sass/screen.scss */
+/* line 184, ../sass/screen.scss */
 section.post-excerpt h2 {
   display: none;
 }
-/* line 178, ../sass/screen.scss */
+/* line 187, ../sass/screen.scss */
 section.post-excerpt h3 {
   display: none;
 }
 
-/* line 183, ../sass/screen.scss */
+/* line 192, ../sass/screen.scss */
 article > * {
   margin-left: auto;
   margin-right: auto;
@@ -238,12 +244,12 @@ article > * {
   max-width: 100%;
 }
 
-/* line 187, ../sass/screen.scss */
+/* line 196, ../sass/screen.scss */
 article > .wide {
   width: 100%;
 }
 
-/* line 191, ../sass/screen.scss */
+/* line 200, ../sass/screen.scss */
 article {
   padding-top: 32px;
   padding-bottom: 8px;
@@ -252,7 +258,7 @@ article {
   color: rgba(0, 0, 0, 0.8);
   line-height: 1.45em;
 }
-/* line 195, ../sass/screen.scss */
+/* line 204, ../sass/screen.scss */
 article div.post-meta {
   font-family: "Source Code Pro", Mono;
   font-weight: 300;
@@ -316,7 +322,7 @@ article div.post-meta li + li::before {
   color: #FF9100;
   content: "* ";
 }
-/* line 205, ../sass/screen.scss */
+/* line 214, ../sass/screen.scss */
 article h1 {
   font-family: "Source Code Pro", Mono;
   font-weight: 300;
@@ -353,15 +359,15 @@ article h1 a:hover {
 article h1 a:active {
   color: #FF9100;
 }
-/* line 207, ../sass/screen.scss */
+/* line 216, ../sass/screen.scss */
 article h1 a {
   text-decoration: none;
 }
-/* line 212, ../sass/screen.scss */
+/* line 221, ../sass/screen.scss */
 article h1.tag-name {
   margin-bottom: 8px;
 }
-/* line 216, ../sass/screen.scss */
+/* line 225, ../sass/screen.scss */
 article h2 {
   font-family: "Source Code Pro", Mono;
   font-weight: 300;
@@ -398,11 +404,11 @@ article h2 a:hover {
 article h2 a:active {
   color: #FF9100;
 }
-/* line 220, ../sass/screen.scss */
+/* line 229, ../sass/screen.scss */
 article h2 a::after {
   content: " ☛";
 }
-/* line 225, ../sass/screen.scss */
+/* line 234, ../sass/screen.scss */
 article h3 {
   font-family: "Source Code Pro", Mono;
   font-weight: 300;
@@ -439,7 +445,7 @@ article h3 a:hover {
 article h3 a:active {
   color: #FF9100;
 }
-/* line 229, ../sass/screen.scss */
+/* line 238, ../sass/screen.scss */
 article h3 a::after {
   content: " ☛";
 }
@@ -467,25 +473,25 @@ article a:hover {
 article a:active {
   color: #FF9100;
 }
-/* line 240, ../sass/screen.scss */
+/* line 249, ../sass/screen.scss */
 article em {
   font-style: italic;
 }
-/* line 244, ../sass/screen.scss */
+/* line 253, ../sass/screen.scss */
 article strong {
   font-weight: 700;
 }
-/* line 248, ../sass/screen.scss */
+/* line 257, ../sass/screen.scss */
 article sup {
   font-size: 0.8em;
   vertical-align: super;
   line-height: 0;
 }
-/* line 254, ../sass/screen.scss */
+/* line 263, ../sass/screen.scss */
 article p {
   margin-bottom: 0.8em;
 }
-/* line 257, ../sass/screen.scss */
+/* line 266, ../sass/screen.scss */
 article p img {
   max-width: 100%;
   width: auto;
@@ -497,13 +503,13 @@ article p img {
   margin-bottom: 1.6em;
   border-radius: 4px;
 }
-/* line 270, ../sass/screen.scss */
+/* line 279, ../sass/screen.scss */
 article p.crop {
   overflow: hidden;
   border-radius: 4px;
   margin-bottom: 0.4em;
 }
-/* line 274, ../sass/screen.scss */
+/* line 283, ../sass/screen.scss */
 article p.crop img.header_image {
   width: 100%;
   height: 100%;
@@ -511,7 +517,7 @@ article p.crop img.header_image {
   margin-top: 0.2em;
   margin-bottom: 0.2em;
 }
-/* line 283, ../sass/screen.scss */
+/* line 292, ../sass/screen.scss */
 article .videoWrapper {
   position: relative;
   padding-bottom: 56.25%;
@@ -523,7 +529,7 @@ article .videoWrapper {
   border-radius: 4px;
   overflow: hidden;
 }
-/* line 288, ../sass/screen.scss */
+/* line 297, ../sass/screen.scss */
 article .videoWrapper iframe {
   position: absolute;
   top: 0;
@@ -531,13 +537,13 @@ article .videoWrapper iframe {
   width: 100%;
   height: 100%;
 }
-/* line 301, ../sass/screen.scss */
+/* line 310, ../sass/screen.scss */
 article code {
-  font-family: "Source Code Pro";
+  font-family: "Source Code Pro", Mono;
   font-weight: 300;
   line-height: 1.2;
 }
-/* line 306, ../sass/screen.scss */
+/* line 315, ../sass/screen.scss */
 article pre {
   margin-left: auto;
   margin-right: auto;
@@ -550,117 +556,124 @@ article pre {
   border-radius: 4px;
   overflow: scroll;
 }
-/* line 314, ../sass/screen.scss */
+/* line 323, ../sass/screen.scss */
 article pre code {
   color: rgba(255, 255, 255, 0.8);
   font-size: 14px;
   line-height: 1.0em;
 }
-/* line 321, ../sass/screen.scss */
+/* line 330, ../sass/screen.scss */
 article blockquote {
   margin-top: 1.6em;
   margin-bottom: 1.6em;
 }
-/* line 324, ../sass/screen.scss */
+/* line 333, ../sass/screen.scss */
 article blockquote p {
   font-style: italic;
   padding-left: 0.8em;
   border-left: 0.4em solid #4DB6AC;
   margin-bottom: 0;
 }
-/* line 330, ../sass/screen.scss */
+/* line 339, ../sass/screen.scss */
 article blockquote P + p {
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 0.8em;
 }
-/* line 337, ../sass/screen.scss */
+/* line 346, ../sass/screen.scss */
 article ul {
   margin-bottom: 0.8em;
 }
-/* line 339, ../sass/screen.scss */
+/* line 348, ../sass/screen.scss */
 article ul li {
   padding-left: 1.2em;
   text-indent: -1.2em;
 }
-/* line 343, ../sass/screen.scss */
+/* line 352, ../sass/screen.scss */
 article ul li + li {
   padding-top: 0.4em;
 }
-/* line 346, ../sass/screen.scss */
+/* line 355, ../sass/screen.scss */
 article ul li::before {
   content: "* ";
   font-family: "Source Code Pro";
   font-weight: 300;
   color: #00796B;
 }
-/* line 352, ../sass/screen.scss */
+/* line 361, ../sass/screen.scss */
 article ul ul {
   margin-bottom: 0px;
 }
-/* line 353, ../sass/screen.scss */
+/* line 362, ../sass/screen.scss */
 article ul ul li::before {
   color: #FF9100;
 }
-/* line 358, ../sass/screen.scss */
+/* line 367, ../sass/screen.scss */
 article ul ul ul li::before {
   color: rgba(0, 0, 0, 0.8);
 }
-/* line 365, ../sass/screen.scss */
+/* line 374, ../sass/screen.scss */
 article ol {
   margin-bottom: 0.8em;
   list-style: none;
 }
-/* line 368, ../sass/screen.scss */
+/* line 377, ../sass/screen.scss */
 article ol li {
   counter-increment: step-counter;
   padding-left: 1.2em;
   text-indent: -1.2em;
 }
-/* line 373, ../sass/screen.scss */
+/* line 382, ../sass/screen.scss */
 article ol li + li {
   padding-top: 0.4em;
 }
-/* line 376, ../sass/screen.scss */
+/* line 385, ../sass/screen.scss */
 article ol li::before {
   content: counter(step-counter) ".";
   font-family: "Source Code Pro";
   font-weight: 300;
   color: #00796B;
 }
-/* line 382, ../sass/screen.scss */
+/* line 391, ../sass/screen.scss */
 article ol li.footnote {
   padding-left: 1em;
   padding-right: 1em;
   margin-bottom: 0.6em;
 }
-/* line 386, ../sass/screen.scss */
+/* line 395, ../sass/screen.scss */
 article ol li.footnote p {
   display: inline;
 }
-/* line 390, ../sass/screen.scss */
+/* line 399, ../sass/screen.scss */
 article ol ol {
   margin-bottom: 0px;
 }
-/* line 392, ../sass/screen.scss */
+/* line 401, ../sass/screen.scss */
 article ol ol li {
   counter-increment: step-counter2;
 }
-/* line 395, ../sass/screen.scss */
+/* line 404, ../sass/screen.scss */
 article ol ol li::before {
   content: counter(step-counter2) ".";
   color: #FF9100;
 }
-/* line 400, ../sass/screen.scss */
+/* line 409, ../sass/screen.scss */
 article ol ol ol li {
   counter-increment: step-counter3;
 }
-/* line 403, ../sass/screen.scss */
+/* line 412, ../sass/screen.scss */
 article ol ol ol li::before {
   content: counter(step-counter3) ".";
   color: rgba(0, 0, 0, 0.8);
 }
-/* line 411, ../sass/screen.scss */
+/* line 420, ../sass/screen.scss */
+article div.footnotes {
+  border-top: 1px solid #00796B;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  font-size: 16px;
+}
+/* line 427, ../sass/screen.scss */
 article section.share {
   text-align: left;
   font-family: "Source Code Pro", Mono;
@@ -696,19 +709,19 @@ article section.share a:hover {
 article section.share a:active {
   color: #FF9100;
 }
-/* line 414, ../sass/screen.scss */
+/* line 430, ../sass/screen.scss */
 article section.share a {
   text-decoration: none;
 }
-/* line 419, ../sass/screen.scss */
+/* line 435, ../sass/screen.scss */
 article section.share span a span.short {
   display: none;
 }
-/* line 424, ../sass/screen.scss */
+/* line 440, ../sass/screen.scss */
 article section.share span::before {
   content: " ";
 }
-/* line 427, ../sass/screen.scss */
+/* line 443, ../sass/screen.scss */
 article section.share span + span::before {
   content: " " "* ";
 }
@@ -809,12 +822,12 @@ article section.share span.reddit a:active {
   color: rgba(0, 0, 0, 0.8);
 }
 
-/* line 445, ../sass/screen.scss */
+/* line 461, ../sass/screen.scss */
 .pagination {
   margin-top: 32px;
   margin-bottom: 32px;
 }
-/* line 448, ../sass/screen.scss */
+/* line 464, ../sass/screen.scss */
 .pagination .newer-posts {
   float: left;
   font-family: "Source Code Pro", Mono;
@@ -855,7 +868,7 @@ article section.share span.reddit a:active {
 .pagination .newer-posts a {
   text-decoration: none;
 }
-/* line 452, ../sass/screen.scss */
+/* line 468, ../sass/screen.scss */
 .pagination .page-number {
   font-family: "Source Code Pro", Mono;
   font-weight: 300;
@@ -893,7 +906,7 @@ article section.share span.reddit a:active {
 .pagination .page-number a:active {
   color: #FF9100;
 }
-/* line 458, ../sass/screen.scss */
+/* line 474, ../sass/screen.scss */
 .pagination .older-posts {
   float: right;
   font-family: "Source Code Pro", Mono;
@@ -934,17 +947,17 @@ article section.share span.reddit a:active {
 .pagination .older-posts a {
   text-decoration: none;
 }
-/* line 462, ../sass/screen.scss */
+/* line 478, ../sass/screen.scss */
 .pagination .hidden {
   color: white;
 }
 
-/* line 467, ../sass/screen.scss */
+/* line 483, ../sass/screen.scss */
 footer {
   text-align: center;
   margin-top: 32px;
 }
-/* line 470, ../sass/screen.scss */
+/* line 486, ../sass/screen.scss */
 footer section {
   display: inline;
   font-family: "Source Code Pro", Mono;
@@ -982,7 +995,7 @@ footer section a:active {
 }
 
 @media only screen and (max-width: 984px) {
-  /* line 478, ../sass/screen.scss */
+  /* line 494, ../sass/screen.scss */
   body {
     margin-left: 12px;
     margin-right: 12px;
@@ -991,109 +1004,117 @@ footer section a:active {
   }
 }
 @media only screen and (max-width: 664px) {
-  /* line 484, ../sass/screen.scss */
+  /* line 500, ../sass/screen.scss */
   header#site-head {
     text-align: center;
   }
 }
 @media only screen and (max-width: 600px) {
-  /* line 491, ../sass/screen.scss */
+  /* line 507, ../sass/screen.scss */
   header#site-head h1 {
     font-size: 46px;
   }
-  /* line 494, ../sass/screen.scss */
+  /* line 510, ../sass/screen.scss */
   header#site-head nav {
     font-size: 16px;
   }
 
-  /* line 498, ../sass/screen.scss */
+  /* line 514, ../sass/screen.scss */
   article {
     padding-top: 16px;
     font-size: 16px;
   }
-  /* line 500, ../sass/screen.scss */
+  /* line 516, ../sass/screen.scss */
   article h1 {
     font-size: 22px;
   }
-  /* line 503, ../sass/screen.scss */
+  /* line 519, ../sass/screen.scss */
   article h2 {
     font-size: 18px;
   }
-  /* line 506, ../sass/screen.scss */
+  /* line 522, ../sass/screen.scss */
   article h3 {
     font-size: 16px;
   }
-  /* line 511, ../sass/screen.scss */
+  /* line 527, ../sass/screen.scss */
   article pre code {
     font-size: 12px;
   }
-  /* line 515, ../sass/screen.scss */
+  /* line 531, ../sass/screen.scss */
+  article div.footnotes {
+    font-size: 14px;
+  }
+  /* line 534, ../sass/screen.scss */
   article section.share {
     font-size: 16px;
   }
-  /* line 517, ../sass/screen.scss */
+  /* line 536, ../sass/screen.scss */
   article section.share span + span::before {
     content: " ";
   }
 
-  /* line 523, ../sass/screen.scss */
+  /* line 542, ../sass/screen.scss */
   .pagination .newer-posts {
     font-size: 20px;
   }
-  /* line 526, ../sass/screen.scss */
+  /* line 545, ../sass/screen.scss */
   .pagination .page-number {
     font-size: 20px;
   }
-  /* line 529, ../sass/screen.scss */
+  /* line 548, ../sass/screen.scss */
   .pagination .older-posts {
     font-size: 20px;
   }
 }
 @media only screen and (max-width: 420px) {
-  /* line 537, ../sass/screen.scss */
+  /* line 556, ../sass/screen.scss */
   header#site-head h1 {
     font-size: 36px;
   }
-  /* line 540, ../sass/screen.scss */
+  /* line 559, ../sass/screen.scss */
   header#site-head nav {
     font-size: 14px;
   }
 
-  /* line 544, ../sass/screen.scss */
+  /* line 563, ../sass/screen.scss */
   article {
     font-size: 14px;
   }
-  /* line 545, ../sass/screen.scss */
+  /* line 564, ../sass/screen.scss */
   article h1 {
     font-size: 20px;
   }
-  /* line 548, ../sass/screen.scss */
+  /* line 567, ../sass/screen.scss */
   article h2 {
     font-size: 16px;
   }
-  /* line 551, ../sass/screen.scss */
+  /* line 570, ../sass/screen.scss */
   article h3 {
     font-size: 14px;
   }
-  /* line 555, ../sass/screen.scss */
+  /* line 574, ../sass/screen.scss */
+  article div.footnotes {
+    font-size: 12px;
+  }
+  /* line 577, ../sass/screen.scss */
   article section.share {
     font-size: 14px;
   }
 
-  /* line 560, ../sass/screen.scss */
+  /* line 582, ../sass/screen.scss */
   .pagination .newer-posts {
     font-size: 16px;
   }
-  /* line 563, ../sass/screen.scss */
+  /* line 585, ../sass/screen.scss */
   .pagination .page-number {
     font-size: 16px;
   }
-  /* line 566, ../sass/screen.scss */
+  /* line 588, ../sass/screen.scss */
   .pagination .older-posts {
     font-size: 16px;
   }
 }
-/* line 575, ../sass/screen.scss */
+/* line 597, ../sass/screen.scss */
 footer div#adsense-bottom-of-page {
   margin-left: auto;
   margin-right: auto;
@@ -1108,14 +1129,14 @@ footer div#adsense-bottom-of-page {
 }
 
 @media only screen and (max-width: 752px) {
-  /* line 588, ../sass/screen.scss */
+  /* line 610, ../sass/screen.scss */
   footer div#adsense-bottom-of-page {
     width: 468px;
     height: 60px;
   }
 }
 @media only screen and (max-width: 492px) {
-  /* line 597, ../sass/screen.scss */
+  /* line 619, ../sass/screen.scss */
   footer div#adsense-bottom-of-page {
     width: 320px;
     height: 100px;
@@ -1123,7 +1144,7 @@ footer div#adsense-bottom-of-page {
   }
 }
 @media only screen and (max-width: 344px) {
-  /* line 607, ../sass/screen.scss */
+  /* line 629, ../sass/screen.scss */
   footer div#adsense-bottom-of-page {
     width: 234px;
     height: 60px;
