@@ -4,8 +4,8 @@
 <article id="{{id}}" class="{{post_class}}" itemscope itemtype="http://schema.org/BlogPosting">
 	{{> article-header}}
 	{{> article-meta}}
-  {{#if image}}
-    <meta itemprop="image" content="{{image}}"></meta>
+  {{#if feature_image}}
+    <meta itemprop="image" content="{{img_url feature_image}}"></meta>
   {{/if}}
 	{{{content}}}
 

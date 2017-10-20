@@ -4,8 +4,8 @@
 <article class="preview">
     {{> article-header}}
     {{> article-meta}}
-    {{#if image}}
-		<p class="crop"><a href="{{url}}"><img class="header_image" src="{{image}}"></img></a></p>
+    {{#if feature_image}}
+		<p class="crop"><a href="{{url}}"><img class="header_image" src="{{img_url feature_image}}"></img></a></p>
     {{/if}}
     <section class="post-excerpt">
         {{content words="100"}}

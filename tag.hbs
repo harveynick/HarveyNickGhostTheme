@@ -5,8 +5,8 @@
     <header>
 		<h1 class="tag-name">I am a {{{name}}}</h1>
 	</header>
-    {{#if image}}
-		<p class="crop"><img class="header_image" src="{{image}}"></img></p>
+    {{#if feature_image}}
+		<p class="crop"><img class="header_image" src="{{img_url feature_image}}}"></img></p>
     {{/if}}
     <section class="post-excerpt">
         {{description}}
@@ -18,8 +18,8 @@
 <article class="preview">
     {{> article-header}}
     {{> article-meta}}
-    {{#if image}}
-		<p class="crop"><a href="{{url}}"><img class="header_image" src="{{image}}"></img></a></p>
+    {{#if feature_image}}
+		<p class="crop"><a href="{{url}}"><img class="header_image" src="{{img_url feature_image}}}"></img></a></p>
     {{/if}}
     <section class="post-excerpt">
         {{content words="100"}}
